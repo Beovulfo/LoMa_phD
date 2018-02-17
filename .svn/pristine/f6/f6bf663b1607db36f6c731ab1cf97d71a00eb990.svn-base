@@ -1,0 +1,85 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC Small  Pantano dm0=1
+CC       160       0.03653    0.07306     0.
+CC Pantano reactive case B
+CC       1200       0.04601      0.189285   0.0
+CC  q0 max.growth rate BOX size
+     1000       0.8621     1.4368   0.
+CC      50       1.00      1.0  0.
+CC       200       0.04601      0.189285   0.0
+CC Domain 2,3,4 (Re =160)
+CC       160      0.01365    0.0365     0.
+CC
+CC New domain for res 0.4 on x,z and 0.2 on y
+CC       160      0.020453    0.040906     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CCOLD    dm0     u0       DT (Temperature)          
+CC              
+CC    dm0     u0       s (density ratio)(rho0=1.0)          
+CC    *       *        *
+CC----------------------------------------
+       1.0      1.0     1.0
+CC       1.0      0.5     1.0
+CC       1.0      0.5     8.0
+CC     1.0      0.5     0.666667
+CC     1.0      0.5     1.20
+CC     1.0      0.5     1.55555556
+CC
+CC  urmstarget   vrmstarget   wrmstarget
+CC          
+CC      *               *          *  
+CC      0.0             0.0         0.0
+CC      0.05             0.05         0.05
+CC      0.0             0.0         0.0
+CC dummy right now
+      0.1             0.1         0.1
+CC sigmau,v,w not used
+CC
+CC   nymax        nhmin           nhmax        swin 
+CC max waves y  min hor. wave   peak waves    swin*dm0
+CC      *           *               *           *
+CC        5           2              19          2.0 
+CC    gam      Scomb       LF         betha
+      4.0      10.0        1.0         100 
+CC Noise
+CC        5           2              48          2.0 
+CC        5           2              24          4.0 
+CC        5           2              64          4.0 
+CC        5           2               48          2.0 
+CC        10           2              48          2.0 
+CC        10           2              48          2.0 
+CC        2           2              48          2.0 
+CC        2           2              4          2.0 
+CC        10           5              36          2.0 
+CC PANTANO used as reference for input generation
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/share/drive/toni/reactml/S10LF101D/IC.dat
+CC  mesh and input profiles file max 70 char22
+CC mean profiles 
+/share/drive/toni/reactml/mean_S10LF10.txt
+CC/share/drive/toni/reactml/mean_S10LF10.txt
+CC Pert
+/share/drive/toni/reactml/pert_S10LF10.txt
+CC/share/drive/toni/reactml/pert_q0.txt
+CC/share/drive/toni/reactml/pert_S10LF10.txt

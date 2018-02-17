@@ -1,0 +1,23 @@
+compiling modulos.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/modulos.f
+compiling rftsingle.F
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/rftsingle.f
+compiling cftsingle.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/cftsingle.f
+compiling fou3D.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/fou3D.f
+compiling cfdiff.F
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/cfdiff.f
+compiling escru.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/escru.f
+compiling laps.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/laps.f
+compiling change.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/change.f
+compiling main.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c  -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/main.f
+compiling cross.f
+cd /home/uc3m43/PROJECT/lomacte/src/../build; mpif90 -O3 -c   -I/home/uc3m43/PROJECT/lomacte/src /home/uc3m43/PROJECT/lomacte/src/cross.f
+Linking.
+mpif90 -o  loma -O3 /home/uc3m43/PROJECT/lomacte/src/../build/modulos.o /home/uc3m43/PROJECT/lomacte/src/../build/rftsingle.o /home/uc3m43/PROJECT/lomacte/src/../build/cftsingle.o /home/uc3m43/PROJECT/lomacte/src/../build/fou3D.o /home/uc3m43/PROJECT/lomacte/src/../build/cfdiff.o /home/uc3m43/PROJECT/lomacte/src/../build/escru.o /home/uc3m43/PROJECT/lomacte/src/../build/laps.o /home/uc3m43/PROJECT/lomacte/src/../build/change.o /home/uc3m43/PROJECT/lomacte/src/../build/main.o /home/uc3m43/PROJECT/lomacte/src/../build/cross.o #./lib/gcc/64/vmx/libfftw3f.a 
+loma built, congratulations.

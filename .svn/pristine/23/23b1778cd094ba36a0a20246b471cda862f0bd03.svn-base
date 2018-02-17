@@ -1,0 +1,126 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC  domain lomacte
+CC      160       0.013635    0.036361     0.
+CC       160       0.013635    0.036361     0.
+CC lomacte x2
+CC      160      0.0068175    0.0181805     0.
+CC Lomacte
+CC       160      0.013635    0.036361     0.
+CC
+CC Test for s=80 small Bax
+CC Lx = 115.25, Lz = 43.1718
+CC     160        0.0545178769  0.1455390277    0.
+CC Test with worse resolution in X and Z
+CC Lx = 115.25/0.75, Lz = 43.1718/0.75;
+CC   160   0.040888407675   0.109154270775   0.
+CCCC Lomacte - Re-Run
+CC       160      0.01363538    0.0364005     0.
+CC Box Lx/2,Lz/2
+CC       160      0.02727076    0.072801  0.
+CC PANTANO (ROGER AND MOSER) BOX
+CC       160        0.0187656     0.0750624   0.
+CC        160        0.0187656     0.07270   0.
+CC  XSEDE VDML
+       160       0.0136295    0.036319     0.
+CC Da Silva jet test
+CC     320.0      0.31415925   0.31415925  0.0
+CC       160      0.018212    0.07306    0.
+CC New box 
+CC       160      0.018212    0.036424    0.
+CC       160        0.03653     0.07306     0.
+CC       160        0.062831     0.251327     0.
+CC       160       0.014    0.056     0.
+CC  Toni case optimized mesh dm0=1
+CC       160       0.020453    0.040906     0.
+CC Small  Pantano dm0=1
+CC       160       0.03653    0.07306     0.
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+CC        5     1       1           
+   15001      1000    200           
+CC   2001       500     100            
+CC   4001       500     50            
+CC     601      300     10
+CC Every nhist steps write STATS file
+CC
+CC
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+   0.5     10
+CC  0.2     10
+CC  0.2     10
+CC      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # accumulation steps
+CC output    0 no stts     for
+CC file      1 do stats   statistics 
+CC number #               calculations 
+CC                         ntimes (ntimes<=nhist)
+CC       *         *        *        *
+CC   28      1            5
+CC    31       1      25
+CC  1       1      1
+ 6        1      1
+CC  17        1      1
+CC 8        1      20
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC inc_ml_bm
+CC FIELD OUTPUT
+CC/share/drive/toni/VDML/s80/test/02/test/SS
+/share/drive/toni/VDML/s20/01c/s20a
+CC/share/drive/toni/VDML/s10/test/00/Pantano
+CC/share/drive/toni/VDML/s80/test/07/Pantano
+CC/share/drive/toni/VDML/s80/test/06/01/linDy045
+CC/share/drive/toni/VDML/s80/test/06/batchelor
+CC/share/drive/toni/VDML/s80/test/05/tanhLy250/A
+CC/share/drive/toni/VDML/s80/test/05/sinmesh
+CC INPUT
+CC/share/drive/toni/VDML/s80/test/05/IC.dat
+CC/share/drive/toni/VDML/s80/test/06/IC.dat
+CC/share/drive/toni/VDML/s80/test/06/01/linDy045.028
+/share/drive/toni/VDML/s20/01/s20a.005
+CC/share/drive/toni/VDML/s20/01/IC.dat
+CC/share/drive/toni/VDML/s80/test/02/Pantano.016
+CC/share/drive/toni/VDML/s10/test/00/IC.dat
+CC/share/drive/toni/VDML/s80/test/07/IC.dat
+CC/share/drive/toni/VDML/s80/test/07/expdecay.dat
+CC/share/drive/toni/VDML/s80/test/08/expdecay2.dat
+CC/share/drive/toni/VDML/s80/test/05/tanhLy250.028
+CC/share/drive/toni/VDML/s80/test/05/sinmesh.048
+CC/share/drive/toni/VDML/s80/test/05/my601.018
+CC STATS OUTPUT
+CC/share/drive/toni/VDML/s80/test/06/batchelor_01
+CC/share/drive/toni/VDML/s80/test/02/test/SS_01
+CC/share/drive/toni/VDML/s80/test/03/Pantano_04
+CC/share/drive/toni/VDML/s20/01/s20a_03
+/share/drive/toni/VDML/s20/01c/s20a_02
+
+CC/share/drive/toni/VDML/s80/test/02/Pantano_03
+CC/share/drive/toni/VDML/s80/test/02/Pantano.016
+CC/share/drive/toni/VDML/s80/test/08/Pantano_02
+CC/share/drive/toni/VDML/s80/test/08/diffold/Pantano_01
+CC/share/drive/toni/VDML/s80/test/06/01/linDy045_02
+CC/share/drive/toni/VDML/s80/test/05/tanhLy250/A_01

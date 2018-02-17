@@ -1,0 +1,4785 @@
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.101                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_101                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.101                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_101                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo  0.8389000    
+ Parcial swap   13.96040    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.072400    
+ Parcial swap   3.506400    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8074000    
+ Parcial swap   3.169500    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8063000    
+ Parcial swap   4.389300    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8074000    
+ Parcial swap   3.144000    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8051000    
+ Parcial swap   3.539100    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.9250000    
+ Parcial swap   3.700600    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.9897000    
+ Parcial swap   3.182200    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.070500    
+ Parcial swap   3.710700    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8038000    
+ Parcial swap   3.134300    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8043000    
+ Parcial swap   2.925500    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8072000    
+ Parcial swap   3.303600    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8079000    
+ Parcial swap   2.922800    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8067000    
+ Parcial swap   3.156400    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.089900    
+ Parcial swap   2.945100    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.087600    
+ Parcial swap   2.893500    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8077000    
+ Parcial swap   3.076500    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8072000    
+ Parcial swap   2.806300    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.069800    
+ Parcial swap   3.220200    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8059000    
+ Parcial swap   2.025000    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8748000    
+ Parcial swap   1.616200    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8032000    
+ Parcial swap   1.508100    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.072800    
+ Parcial swap   1.488600    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8043000    
+ Parcial swap   1.295100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.7987000    
+ Parcial swap   1.258100    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.9712000    
+ Parcial swap   1.576500    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.077400    
+ Parcial swap   1.255700    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8030000    
+ Parcial swap   1.265100    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.081500    
+ Parcial swap   1.636900    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8069000    
+ Parcial swap   1.262600    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo   1.069500    
+ Parcial swap   1.212000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8101000    
+ Parcial swap   1.027500    
+ -----------------------------------------------
+ time for yz ops:  -169022.7    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.79410    
+ swap  -169051.5    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   6550578.14000000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   6381555.41990000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.102                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_102                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.102                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_102                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.867300    
+ Parcial swap   7.063600    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8043000    
+ Parcial swap   6.346200    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8001000    
+ Parcial swap   6.589800    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo   1.100300    
+ Parcial swap   6.434400    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8012000    
+ Parcial swap   5.720400    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8038000    
+ Parcial swap   5.626700    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8002000    
+ Parcial swap   5.621000    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.074500    
+ Parcial swap   5.651400    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8029000    
+ Parcial swap   5.642100    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.7997000    
+ Parcial swap   6.019800    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8002000    
+ Parcial swap   5.869800    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8035000    
+ Parcial swap   5.947100    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8033000    
+ Parcial swap   6.071300    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8038000    
+ Parcial swap   5.556900    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8030000    
+ Parcial swap   5.245900    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.086000    
+ Parcial swap   5.421400    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.7970000    
+ Parcial swap   5.018900    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8128000    
+ Parcial swap   5.027100    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8024000    
+ Parcial swap   4.989200    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8582000    
+ Parcial swap   5.167500    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   4.851300    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8993000    
+ Parcial swap   5.051000    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.7992000    
+ Parcial swap   4.881000    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8278000    
+ Parcial swap   4.902700    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8217000    
+ Parcial swap   4.990100    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.9239000    
+ Parcial swap   4.750700    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.7983000    
+ Parcial swap   5.140200    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo   1.074200    
+ Parcial swap   4.895700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8044000    
+ Parcial swap   5.255500    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.7996000    
+ Parcial swap   12.98020    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8004000    
+ Parcial swap   5.390100    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.076100    
+ Parcial swap   5.567600    
+ -----------------------------------------------
+ time for yz ops:   45226.72    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.45170    
+ swap   45198.27    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   27220005.8656000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   27265232.5891000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.103                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_103                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.103                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_103                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.871600    
+ Parcial swap   6.549200    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.7992000    
+ Parcial swap   9.383800    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.068600    
+ Parcial swap   6.572600    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.7946000    
+ Parcial swap   9.280700    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8008000    
+ Parcial swap   8.983400    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.055600    
+ Parcial swap   4.893000    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.075700    
+ Parcial swap   5.451400    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.065200    
+ Parcial swap   3.451300    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.7987000    
+ Parcial swap   3.711900    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.9049000    
+ Parcial swap   3.707600    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.059500    
+ Parcial swap   3.455300    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.7984000    
+ Parcial swap   3.923900    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.7941000    
+ Parcial swap   3.225400    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.020300    
+ Parcial swap   3.427000    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8737000    
+ Parcial swap   3.278800    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.094300    
+ Parcial swap   3.119200    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.9036000    
+ Parcial swap   3.065700    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8003000    
+ Parcial swap   3.081500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.7991000    
+ Parcial swap   2.863600    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo   1.065200    
+ Parcial swap   2.847700    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo   1.092700    
+ Parcial swap   2.883400    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8070000    
+ Parcial swap   2.978100    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.9725000    
+ Parcial swap   2.700500    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8112000    
+ Parcial swap   2.641100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8089000    
+ Parcial swap   2.936100    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8154000    
+ Parcial swap   2.830200    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.069000    
+ Parcial swap   3.416200    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.9855000    
+ Parcial swap   3.553800    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.084200    
+ Parcial swap   3.625100    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8061000    
+ Parcial swap   4.332200    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8015000    
+ Parcial swap   2.935500    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.9725000    
+ Parcial swap   1.155100    
+ -----------------------------------------------
+ time for yz ops:   45480.77    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.46990    
+ swap   45450.30    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   47981573.4227000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   48027054.1864000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.104                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_104                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.104                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_104                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.550700    
+ Parcial swap   6.696300    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8042000    
+ Parcial swap   6.894900    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8025000    
+ Parcial swap   8.845700    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.9701000    
+ Parcial swap   6.718000    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8027000    
+ Parcial swap   6.696900    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.9577000    
+ Parcial swap   6.680600    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.7999000    
+ Parcial swap   6.988900    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7983000    
+ Parcial swap   5.208800    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.093900    
+ Parcial swap   5.672900    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8059000    
+ Parcial swap   7.344800    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.076000    
+ Parcial swap   5.331200    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.008100    
+ Parcial swap   4.990800    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo   1.075300    
+ Parcial swap   5.234300    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8025000    
+ Parcial swap   5.117700    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.7997000    
+ Parcial swap   4.851200    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8016000    
+ Parcial swap   5.278600    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8012000    
+ Parcial swap   5.076500    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8011000    
+ Parcial swap   5.432200    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.7986000    
+ Parcial swap   5.006300    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8032000    
+ Parcial swap   5.296700    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8026000    
+ Parcial swap   5.503600    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.7985000    
+ Parcial swap   5.166300    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.091500    
+ Parcial swap   5.369600    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8041000    
+ Parcial swap   5.446300    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8019000    
+ Parcial swap   5.404800    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.079000    
+ Parcial swap   5.308800    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.7976000    
+ Parcial swap   5.464200    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8004000    
+ Parcial swap   5.298500    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.7995000    
+ Parcial swap   5.399400    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   3.562700    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8047000    
+ Parcial swap   5.932600    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8021000    
+ Parcial swap   3.429900    
+ -----------------------------------------------
+ time for yz ops:   44757.49    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.33740    
+ swap   44729.14    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   68415093.8639999     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   68459851.3535999     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.105                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_105                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.105                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_105                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.687000    
+ Parcial swap   7.007400    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.7983000    
+ Parcial swap   6.566300    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.075600    
+ Parcial swap   6.561600    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.7935000    
+ Parcial swap   7.242000    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8041000    
+ Parcial swap   7.742000    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.065100    
+ Parcial swap   7.154300    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8007000    
+ Parcial swap   9.264800    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7970000    
+ Parcial swap   7.621300    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.061000    
+ Parcial swap   6.936400    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.057700    
+ Parcial swap   6.686400    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8071000    
+ Parcial swap   7.078500    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.060500    
+ Parcial swap   6.931100    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8193000    
+ Parcial swap   6.908300    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.7988000    
+ Parcial swap   7.247400    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.060600    
+ Parcial swap   5.293300    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.057400    
+ Parcial swap   5.218900    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.058100    
+ Parcial swap   5.335300    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.066200    
+ Parcial swap   5.322300    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.064400    
+ Parcial swap   5.523500    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.7976000    
+ Parcial swap   5.261400    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo   1.071000    
+ Parcial swap   5.435500    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo   1.071700    
+ Parcial swap   5.644000    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.9915000    
+ Parcial swap   5.661200    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo   1.062800    
+ Parcial swap   5.196000    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.023900    
+ Parcial swap   5.245600    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.7983000    
+ Parcial swap   5.364900    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.055300    
+ Parcial swap   7.368100    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.7959000    
+ Parcial swap   8.608900    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.7982000    
+ Parcial swap   5.506500    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.9362000    
+ Parcial swap   3.732000    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.7987000    
+ Parcial swap  0.9362000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.082000    
+ Parcial swap  0.9139000    
+ -----------------------------------------------
+ time for yz ops:   44962.75    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    31.01550    
+ swap   44931.74    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   88940607.9197001     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   88985570.6735001     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.106                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_106                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.106                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_106                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.325700    
+ Parcial swap   5.959600    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.7987000    
+ Parcial swap   5.854100    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8139000    
+ Parcial swap   5.380400    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8319000    
+ Parcial swap   1.210900    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo   1.070800    
+ Parcial swap  0.9990000    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8094000    
+ Parcial swap   9.698400    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.7966000    
+ Parcial swap   8.102200    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7977000    
+ Parcial swap   5.484300    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.9180000    
+ Parcial swap   5.401900    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.083000    
+ Parcial swap   5.215000    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8019000    
+ Parcial swap   5.451700    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8062000    
+ Parcial swap   5.352300    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.7962000    
+ Parcial swap   5.163300    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.005600    
+ Parcial swap   5.295300    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8512000    
+ Parcial swap   5.376800    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8059000    
+ Parcial swap   5.337800    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.064700    
+ Parcial swap   11.62780    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8030000    
+ Parcial swap   5.397500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8475000    
+ Parcial swap   6.990800    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo   1.070000    
+ Parcial swap   7.425600    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8448000    
+ Parcial swap   5.695300    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8250000    
+ Parcial swap   5.106300    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.7965000    
+ Parcial swap   5.038700    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8735000    
+ Parcial swap   5.445900    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.089600    
+ Parcial swap   10.78110    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.092200    
+ Parcial swap   6.601900    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8017000    
+ Parcial swap   5.268400    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8894000    
+ Parcial swap   5.674700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8012000    
+ Parcial swap   5.356000    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8001000    
+ Parcial swap   6.397900    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8005000    
+ Parcial swap   5.929800    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.063100    
+ Parcial swap   5.670000    
+ -----------------------------------------------
+ time for yz ops:  -169616.7    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.77550    
+ swap  -169645.5    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   12283555.8256000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   12113939.1306000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.107                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_107                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.107                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_107                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.575400    
+ Parcial swap   7.573500    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.080000    
+ Parcial swap   7.087600    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8000000    
+ Parcial swap   7.205800    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo   1.073600    
+ Parcial swap   7.998000    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo   1.026200    
+ Parcial swap   9.261900    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.078000    
+ Parcial swap   8.448600    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8084000    
+ Parcial swap   8.518100    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8069000    
+ Parcial swap   9.307500    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8003000    
+ Parcial swap   6.362600    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8034000    
+ Parcial swap   6.401800    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.062200    
+ Parcial swap   6.109600    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8128000    
+ Parcial swap   5.639500    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo   1.078100    
+ Parcial swap   5.704800    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8001000    
+ Parcial swap   6.565100    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.7996000    
+ Parcial swap   6.163300    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.9590000    
+ Parcial swap   6.260200    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.7998000    
+ Parcial swap   6.699500    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.068400    
+ Parcial swap   7.080500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.068400    
+ Parcial swap   5.999500    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.7982000    
+ Parcial swap   5.525400    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8685000    
+ Parcial swap   5.982300    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8025000    
+ Parcial swap   8.188400    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8009000    
+ Parcial swap   7.307700    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo   1.069000    
+ Parcial swap   5.918300    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.087400    
+ Parcial swap   6.834800    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.027100    
+ Parcial swap   6.463100    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   5.270900    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.7968000    
+ Parcial swap   5.423700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.075500    
+ Parcial swap   5.160900    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.9645000    
+ Parcial swap   3.742600    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8050000    
+ Parcial swap  0.9451000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.076200    
+ Parcial swap  0.9151000    
+ -----------------------------------------------
+ time for yz ops:   45305.30    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.27450    
+ swap   45275.02    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   32963052.9332000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   33008358.2306000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.108                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_108                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.108                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_108                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   2.435300    
+ Parcial swap   6.412200    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   6.658300    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.059400    
+ Parcial swap   6.780100    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8008000    
+ Parcial swap   5.396700    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8040000    
+ Parcial swap   3.179200    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8000000    
+ Parcial swap  0.9381000    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.059000    
+ Parcial swap  0.9483000    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7996000    
+ Parcial swap  0.9588000    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8071000    
+ Parcial swap   6.682600    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.075600    
+ Parcial swap   5.851800    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.068700    
+ Parcial swap   5.184100    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8058000    
+ Parcial swap   5.531600    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8843000    
+ Parcial swap   5.261700    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.069400    
+ Parcial swap   5.169300    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.7986000    
+ Parcial swap   5.411900    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8767000    
+ Parcial swap   5.160800    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.9038000    
+ Parcial swap   5.451000    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.064400    
+ Parcial swap   5.131500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.055800    
+ Parcial swap   5.229400    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8032000    
+ Parcial swap   5.048500    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.9102000    
+ Parcial swap   5.338200    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8856000    
+ Parcial swap   5.152800    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8027000    
+ Parcial swap   6.468100    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8000000    
+ Parcial swap   4.499100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8044000    
+ Parcial swap   4.137300    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.071600    
+ Parcial swap   3.392600    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.065100    
+ Parcial swap   3.525700    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo   1.061300    
+ Parcial swap   2.926800    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.081800    
+ Parcial swap   2.952700    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo   1.048900    
+ Parcial swap   2.540200    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.7995000    
+ Parcial swap  0.9435000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.7994000    
+ Parcial swap  0.9158000    
+ -----------------------------------------------
+ time for yz ops:   45111.68    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.90430    
+ swap   45080.79    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   53554917.7928000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   53600029.4761000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.109                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_109                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.109                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_109                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   2.992200    
+ Parcial swap   5.086700    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.076900    
+ Parcial swap   5.068700    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.073900    
+ Parcial swap   5.227500    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8180000    
+ Parcial swap   5.169100    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8011000    
+ Parcial swap   12.95440    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.9102000    
+ Parcial swap   6.403300    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.065900    
+ Parcial swap   5.052300    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.082700    
+ Parcial swap  0.9641000    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.7997000    
+ Parcial swap  0.9474000    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.7967000    
+ Parcial swap   1.280900    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8016000    
+ Parcial swap   6.896400    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8009000    
+ Parcial swap   6.690200    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.7998000    
+ Parcial swap   5.331800    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8017000    
+ Parcial swap   5.072900    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.084800    
+ Parcial swap   5.266600    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.091300    
+ Parcial swap   5.318100    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8729000    
+ Parcial swap   5.354800    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8048000    
+ Parcial swap   5.377400    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8004000    
+ Parcial swap   5.479100    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8206000    
+ Parcial swap   4.946900    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8006000    
+ Parcial swap   4.995600    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8036000    
+ Parcial swap   5.059700    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8056000    
+ Parcial swap   5.204500    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8028000    
+ Parcial swap   4.958100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.7994000    
+ Parcial swap   9.529500    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.098900    
+ Parcial swap   4.995700    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8503000    
+ Parcial swap   5.190200    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8029000    
+ Parcial swap   5.356400    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8032000    
+ Parcial swap   5.265100    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo   1.064400    
+ Parcial swap   3.492900    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo   1.077900    
+ Parcial swap  0.9424000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8054000    
+ Parcial swap  0.9136000    
+ -----------------------------------------------
+ time for yz ops:   45238.36    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.61110    
+ swap   45207.74    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   74215750.7102999     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   74260989.0648999     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.110                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_110                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.110                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_110                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.981000    
+ Parcial swap   5.030900    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.068400    
+ Parcial swap   5.127500    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.068300    
+ Parcial swap   5.068200    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8018000    
+ Parcial swap   5.525800    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8019000    
+ Parcial swap   5.199500    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.071500    
+ Parcial swap   4.809900    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8005000    
+ Parcial swap   5.288900    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.083800    
+ Parcial swap   4.706000    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8019000    
+ Parcial swap   1.011300    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8006000    
+ Parcial swap  0.9371000    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8000000    
+ Parcial swap   1.457000    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8012000    
+ Parcial swap   8.383000    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo   1.068300    
+ Parcial swap   5.370000    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.9903000    
+ Parcial swap   5.202400    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8054000    
+ Parcial swap   5.033300    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8011000    
+ Parcial swap   5.146600    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.071600    
+ Parcial swap   5.020200    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.073700    
+ Parcial swap   5.255000    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.086200    
+ Parcial swap   5.180100    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8010000    
+ Parcial swap   5.324700    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo   1.075300    
+ Parcial swap   5.358700    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.7968000    
+ Parcial swap   5.122200    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8032000    
+ Parcial swap   5.404400    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8087000    
+ Parcial swap   5.092400    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.068000    
+ Parcial swap   5.263200    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.072900    
+ Parcial swap   4.951100    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.077500    
+ Parcial swap   4.931900    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo   1.075500    
+ Parcial swap   5.078500    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8565000    
+ Parcial swap   5.297400    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo   1.074800    
+ Parcial swap   3.611700    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8035000    
+ Parcial swap  0.9114000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.075100    
+ Parcial swap  0.8886000    
+ -----------------------------------------------
+ time for yz ops:   45169.94    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    31.16630    
+ swap   45138.77    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   94826063.5851002     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   94871233.5212002     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.111                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_111                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.111                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_111                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.324800    
+ Parcial swap   5.280200    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8366000    
+ Parcial swap   6.791700    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.060000    
+ Parcial swap   5.778400    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8639000    
+ Parcial swap   5.576900    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.7979000    
+ Parcial swap   5.361500    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.7950000    
+ Parcial swap   5.454500    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8010000    
+ Parcial swap   5.432600    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7963000    
+ Parcial swap   5.189500    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.056600    
+ Parcial swap   3.674800    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.051100    
+ Parcial swap  0.9470000    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.7950000    
+ Parcial swap  0.9938000    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.7928000    
+ Parcial swap   1.273000    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8053000    
+ Parcial swap   6.417100    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.7985000    
+ Parcial swap   5.050200    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.060100    
+ Parcial swap   5.162800    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.7973000    
+ Parcial swap   5.229500    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.058700    
+ Parcial swap   6.579100    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8293000    
+ Parcial swap   5.593200    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.7957000    
+ Parcial swap   5.320400    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo   1.073100    
+ Parcial swap   5.263000    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.7990000    
+ Parcial swap   5.578200    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.7991000    
+ Parcial swap   5.246700    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.081100    
+ Parcial swap   5.359700    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8007000    
+ Parcial swap   5.518800    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.061900    
+ Parcial swap   5.629100    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.7993000    
+ Parcial swap   5.395900    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.051400    
+ Parcial swap   6.957800    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.7990000    
+ Parcial swap   5.796900    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.101700    
+ Parcial swap   5.603600    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo   1.056400    
+ Parcial swap   3.655400    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.7959000    
+ Parcial swap  0.9331000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.056900    
+ Parcial swap  0.8917000    
+ -----------------------------------------------
+ time for yz ops:  -169115.2    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    29.39140    
+ swap  -169144.6    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   18363207.0923000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   18194091.9120000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.112                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_112                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.112                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_112                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.947200    
+ Parcial swap   5.380700    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.7970000    
+ Parcial swap   5.375900    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8002000    
+ Parcial swap   5.067000    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.9409000    
+ Parcial swap   5.504400    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8620000    
+ Parcial swap   5.261400    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.7950000    
+ Parcial swap   5.272000    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8081000    
+ Parcial swap   5.255200    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.053300    
+ Parcial swap   7.657300    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.7992000    
+ Parcial swap   5.364500    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.9966000    
+ Parcial swap   3.636600    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.7995000    
+ Parcial swap  0.9972000    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8025000    
+ Parcial swap   1.204200    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.7938000    
+ Parcial swap   1.293000    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.066400    
+ Parcial swap   6.538500    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.7953000    
+ Parcial swap   5.770800    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8117000    
+ Parcial swap   5.260500    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.7973000    
+ Parcial swap   5.619000    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.7968000    
+ Parcial swap   5.130900    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.061100    
+ Parcial swap   5.297900    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8044000    
+ Parcial swap   5.406200    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.7958000    
+ Parcial swap   4.875200    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8968000    
+ Parcial swap   5.419300    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.7989000    
+ Parcial swap   5.564000    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.7991000    
+ Parcial swap   5.197800    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.9821000    
+ Parcial swap   5.531800    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.063500    
+ Parcial swap   5.257500    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.007600    
+ Parcial swap   5.277100    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.7991000    
+ Parcial swap   5.053500    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.7999000    
+ Parcial swap   5.205700    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8553000    
+ Parcial swap   5.297500    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.7981000    
+ Parcial swap  0.9279000    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.050100    
+ Parcial swap  0.9550000    
+ -----------------------------------------------
+ time for yz ops:   45159.77    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.97460    
+ swap   45130.80    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   38968307.4010000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   39013467.1709000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.113                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_113                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.113                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_113                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   2.013300    
+ Parcial swap   5.284100    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8044000    
+ Parcial swap   5.357600    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8957000    
+ Parcial swap   5.657800    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.9425000    
+ Parcial swap   5.312400    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo   1.076900    
+ Parcial swap   6.842600    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.098100    
+ Parcial swap   6.126400    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8033000    
+ Parcial swap   17.40840    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8799000    
+ Parcial swap   3.904400    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8009000    
+ Parcial swap   3.513400    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8018000    
+ Parcial swap   3.966300    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.7994000    
+ Parcial swap   3.371700    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8709000    
+ Parcial swap   9.601300    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8251000    
+ Parcial swap   15.13430    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8015000    
+ Parcial swap   13.05480    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8103000    
+ Parcial swap   6.030600    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo   1.056900    
+ Parcial swap   4.055300    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.9119000    
+ Parcial swap   7.257600    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8044000    
+ Parcial swap   5.548000    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8036000    
+ Parcial swap   5.170700    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.7985000    
+ Parcial swap   5.486400    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8229000    
+ Parcial swap   5.349100    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.7960000    
+ Parcial swap   4.989400    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.079800    
+ Parcial swap   5.307800    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.7980000    
+ Parcial swap   5.180100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8020000    
+ Parcial swap   5.410000    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8016000    
+ Parcial swap   5.353500    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8060000    
+ Parcial swap   5.215700    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.7992000    
+ Parcial swap   6.892100    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8007000    
+ Parcial swap   6.743100    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo   1.086600    
+ Parcial swap   8.330900    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8188000    
+ Parcial swap   6.963400    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.7988000    
+ Parcial swap   6.973700    
+ -----------------------------------------------
+ time for yz ops:   45900.77    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.80970    
+ swap   45871.96    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   59917033.7407000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   59962934.5156000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.114                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_114                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.114                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_114                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   3.120100    
+ Parcial swap   7.195100    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8007000    
+ Parcial swap   5.437200    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8049000    
+ Parcial swap   5.489400    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.7996000    
+ Parcial swap   5.489400    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8019000    
+ Parcial swap   6.358200    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8028000    
+ Parcial swap   5.796200    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.7994000    
+ Parcial swap   11.90550    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.9424000    
+ Parcial swap   5.386000    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8885000    
+ Parcial swap   5.376000    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8039000    
+ Parcial swap   5.190900    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.042500    
+ Parcial swap   5.071700    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.071700    
+ Parcial swap   6.386000    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo   1.063200    
+ Parcial swap   6.725100    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8050000    
+ Parcial swap   6.647500    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.053900    
+ Parcial swap   6.876600    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8088000    
+ Parcial swap   9.484400    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.7999000    
+ Parcial swap   8.319200    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8001000    
+ Parcial swap   6.744300    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.067500    
+ Parcial swap   7.319800    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8276000    
+ Parcial swap   6.977400    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8024000    
+ Parcial swap   6.695100    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo   1.066800    
+ Parcial swap   6.331400    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.070900    
+ Parcial swap   5.439400    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8004000    
+ Parcial swap   5.767300    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.9518000    
+ Parcial swap   5.828200    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.7994000    
+ Parcial swap   5.991600    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8014000    
+ Parcial swap   5.879300    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo   1.069400    
+ Parcial swap   5.387300    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   5.355100    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.9609000    
+ Parcial swap   11.12510    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8008000    
+ Parcial swap   7.201700    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.058500    
+ Parcial swap   6.898600    
+ -----------------------------------------------
+ time for yz ops:   45169.94    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.88940    
+ swap   45139.05    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   80537325.6835000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   80582495.6218000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.115                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_115                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.115                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_115                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.437400    
+ Parcial swap   7.098000    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.029500    
+ Parcial swap   5.554500    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.096700    
+ Parcial swap   5.537600    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo   1.079200    
+ Parcial swap   6.928600    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8029000    
+ Parcial swap   5.947700    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo   1.060800    
+ Parcial swap   5.124400    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.075000    
+ Parcial swap   5.200800    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.080900    
+ Parcial swap   5.736300    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8024000    
+ Parcial swap   5.380600    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.088600    
+ Parcial swap   5.098500    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8065000    
+ Parcial swap   6.860000    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.098000    
+ Parcial swap   5.532700    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo   1.082400    
+ Parcial swap   6.200500    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.081900    
+ Parcial swap   7.541700    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.094000    
+ Parcial swap   7.722600    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8049000    
+ Parcial swap   8.168500    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.095200    
+ Parcial swap   7.470000    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.7964000    
+ Parcial swap   9.189400    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.9571000    
+ Parcial swap   7.537600    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8046000    
+ Parcial swap   7.466700    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8038000    
+ Parcial swap   6.026500    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo   1.073100    
+ Parcial swap   5.525100    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8228000    
+ Parcial swap   5.479500    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo   1.094700    
+ Parcial swap   5.290600    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.7986000    
+ Parcial swap   5.332100    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.080600    
+ Parcial swap   5.780700    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo   1.075300    
+ Parcial swap   5.539800    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8052000    
+ Parcial swap   5.616800    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo   1.079800    
+ Parcial swap   5.672600    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8066000    
+ Parcial swap   7.761000    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo   1.037400    
+ Parcial swap   8.656800    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo   1.107000    
+ Parcial swap   7.795300    
+ -----------------------------------------------
+ time for yz ops:  -169578.9    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    31.75930    
+ swap  -169610.6    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   3872066.72730000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   3702487.85350000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.116                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_116                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.116                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_116                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   2.346800    
+ Parcial swap   5.108300    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.9241000    
+ Parcial swap   6.510500    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8916000    
+ Parcial swap   5.030100    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo   1.065000    
+ Parcial swap   5.080300    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.7975000    
+ Parcial swap   5.110700    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8063000    
+ Parcial swap   5.141200    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.054900    
+ Parcial swap   5.366800    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.9421000    
+ Parcial swap   5.342600    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.059200    
+ Parcial swap   5.811200    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.7991000    
+ Parcial swap   5.417600    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.7961000    
+ Parcial swap   5.132400    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.056900    
+ Parcial swap   5.390400    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.7967000    
+ Parcial swap   5.632400    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8921000    
+ Parcial swap   5.773600    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.7974000    
+ Parcial swap   7.472600    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.7967000    
+ Parcial swap   7.244100    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.051800    
+ Parcial swap   7.353500    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.7986000    
+ Parcial swap   7.163000    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8007000    
+ Parcial swap   8.105800    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo   1.055900    
+ Parcial swap   7.507800    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo   1.057400    
+ Parcial swap   7.468700    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo   1.063700    
+ Parcial swap   7.751700    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.7948000    
+ Parcial swap   5.543600    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.7999000    
+ Parcial swap   5.373700    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo   1.030400    
+ Parcial swap   5.536200    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.7967000    
+ Parcial swap   8.107700    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.7963000    
+ Parcial swap   5.970900    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8068000    
+ Parcial swap   6.894700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.7967000    
+ Parcial swap   13.88200    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8989000    
+ Parcial swap   7.427500    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo   1.071400    
+ Parcial swap   6.691800    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8009000    
+ Parcial swap   6.198200    
+ -----------------------------------------------
+ time for yz ops:   44988.19    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    30.24340    
+ swap   44957.95    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   24391627.5381000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   24436615.7283000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.117                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_117                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.117                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_117                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.338900    
+ Parcial swap   6.745500    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.089900    
+ Parcial swap   6.809000    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.079900    
+ Parcial swap   5.828200    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.9916000    
+ Parcial swap   4.923000    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8004000    
+ Parcial swap   4.975700    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8149000    
+ Parcial swap   4.944000    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8029000    
+ Parcial swap   4.746200    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo   1.096900    
+ Parcial swap   4.611500    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.077100    
+ Parcial swap   4.468200    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8026000    
+ Parcial swap   4.755000    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo   1.085500    
+ Parcial swap   4.571300    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.093700    
+ Parcial swap   5.011200    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8018000    
+ Parcial swap   4.951200    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8016000    
+ Parcial swap   5.088300    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.091900    
+ Parcial swap   4.851200    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8020000    
+ Parcial swap   4.965400    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.086000    
+ Parcial swap   5.424100    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.073900    
+ Parcial swap   6.246200    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.7984000    
+ Parcial swap   7.033100    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8036000    
+ Parcial swap   6.669000    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8079000    
+ Parcial swap   8.734400    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8017000    
+ Parcial swap   6.763300    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8002000    
+ Parcial swap   6.493900    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8000000    
+ Parcial swap   6.494500    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8018000    
+ Parcial swap   5.295000    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8152000    
+ Parcial swap   6.076600    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8371000    
+ Parcial swap   18.41030    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8519000    
+ Parcial swap   15.98630    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8060000    
+ Parcial swap   17.93700    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.7998000    
+ Parcial swap   18.78100    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo   1.078800    
+ Parcial swap   12.58980    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8507000    
+ Parcial swap   11.65630    
+ -----------------------------------------------
+ time for yz ops:   47595.28    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    29.38460    
+ swap   47565.89    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   46140727.8187000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   46188323.0954000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.118                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_118                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.118                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_118                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.236400    
+ Parcial swap   15.16990    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8545000    
+ Parcial swap   3.979700    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8043000    
+ Parcial swap   4.312100    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8023000    
+ Parcial swap   5.265700    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo   1.140100    
+ Parcial swap   4.339000    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8057000    
+ Parcial swap   10.63620    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.105200    
+ Parcial swap   8.473300    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8251000    
+ Parcial swap   12.87260    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8083000    
+ Parcial swap   25.84910    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8222000    
+ Parcial swap   17.00410    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8095000    
+ Parcial swap   11.42100    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.125400    
+ Parcial swap   8.582200    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8133000    
+ Parcial swap   14.32430    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo   1.113200    
+ Parcial swap   11.06880    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo   1.128300    
+ Parcial swap   10.33120    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8031000    
+ Parcial swap   9.785600    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.086300    
+ Parcial swap   7.478800    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.066700    
+ Parcial swap   4.251000    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo   1.063600    
+ Parcial swap   20.74520    
+ Plane:          305 of          512
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.119                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_119                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.119                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_119                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.196400    
+ Parcial swap   56.04050    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8271000    
+ Parcial swap   15.08460    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8045000    
+ Parcial swap   13.75130    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8022000    
+ Parcial swap   10.28190    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8015000    
+ Parcial swap   6.399800    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8008000    
+ Parcial swap   5.154600    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8008000    
+ Parcial swap   5.250700    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.7983000    
+ Parcial swap   4.061600    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8061000    
+ Parcial swap   6.023000    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo   1.073200    
+ Parcial swap   4.540300    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8067000    
+ Parcial swap   4.287300    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo   1.073100    
+ Parcial swap   4.876400    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8011000    
+ Parcial swap   3.198000    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8048000    
+ Parcial swap   5.645100    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8027000    
+ Parcial swap   5.440400    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8013000    
+ Parcial swap   3.874800    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo   1.062300    
+ Parcial swap   4.641600    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.9047000    
+ Parcial swap   3.625500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8005000    
+ Parcial swap   3.624400    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8031000    
+ Parcial swap   4.382200    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo   1.066000    
+ Parcial swap   3.491100    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8014000    
+ Parcial swap   3.725700    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo   1.074900    
+ Parcial swap   3.540500    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo   1.093900    
+ Parcial swap   3.506100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8033000    
+ Parcial swap   3.733500    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo   1.072300    
+ Parcial swap   3.454600    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8002000    
+ Parcial swap   2.750700    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo   1.071400    
+ Parcial swap   2.365700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.9571000    
+ Parcial swap   1.780800    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8034000    
+ Parcial swap   3.065600    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8406000    
+ Parcial swap   13.21120    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8212000    
+ Parcial swap   15.54260    
+ -----------------------------------------------
+ time for yz ops:   47443.97    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    28.57690    
+ swap   47415.40    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ -----------------------------------------------
+ time for x ops:   81538773.5519000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   81586217.5277000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case2/s10b.120                                      
+  
+ /share/drive/toni/Re160s10/case2/s10b_120                                      
+  
+ archivo abierto
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case2/s10b.120                                       
+ 
+  swap in :  /share/drive/toni/swapa                                                         
+ 
+  out in :  /share/drive/toni/Re160s10/case2/s10b_120                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo   1.205000    
+ Parcial swap   25.42290    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo   1.127500    
+ Parcial swap   7.071200    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo   1.105600    
+ Parcial swap   5.938900    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8084000    
+ Parcial swap   5.931800    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8031000    
+ Parcial swap   5.102800    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8041000    
+ Parcial swap   9.020700    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo   1.072700    
+ Parcial swap   4.935500    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8055000    
+ Parcial swap   4.551800    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo   1.073500    
+ Parcial swap   4.774600    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8326000    
+ Parcial swap   4.310300    
+ Plane:          161 of          512
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+tofis              00000000004CBC89  Unknown               Unknown  Unknown
+tofis              00000000004CA600  Unknown               Unknown  Unknown
+tofis              0000000000485BC2  Unknown               Unknown  Unknown
+tofis              000000000043DBD3  Unknown               Unknown  Unknown
+tofis              0000000000441569  Unknown               Unknown  Unknown
+libpthread.so.0    0000003E3840F710  Unknown               Unknown  Unknown
+libpthread.so.0    0000003E3840E740  Unknown               Unknown  Unknown
+tofis              00000000004A4EED  Unknown               Unknown  Unknown
+tofis              000000000045A8DF  Unknown               Unknown  Unknown
+tofis              0000000000403C2D  Unknown               Unknown  Unknown
+tofis              0000000000403006  Unknown               Unknown  Unknown
+libc.so.6          0000003E3781ED5D  Unknown               Unknown  Unknown
+tofis              0000000000402EF9  Unknown               Unknown  Unknown
+>>> 
+ Initalizing ...
+ /share/drive/toni/Re160s10/case1/s10c.007                                      
+  
+ /share/drive/toni/Re160s10/case1/s10c_007                                      
+  
+forrtl: No such file or directory
+forrtl: severe (29): file not found, unit 1, file /share/drive/toni/Re160s10/case1/s10c.007
+Image              PC                Routine            Line        Source             
+tofis              0000000000447D8C  Unknown               Unknown  Unknown
+tofis              00000000004068B9  Unknown               Unknown  Unknown
+tofis              00000000004030BD  Unknown               Unknown  Unknown
+tofis              0000000000403006  Unknown               Unknown  Unknown
+libc.so.6          0000003E3781ED5D  Unknown               Unknown  Unknown
+tofis              0000000000402EF9  Unknown               Unknown  Unknown
+ Initalizing ...
+ /share/drive/toni/Re160s10/case1/s10c.008                                      
+  
+ /share/drive/toni/Re160s10/case1/s10c_008                                      
+  
+forrtl: No such file or directory
+forrtl: severe (29): file not found, unit 1, file /share/drive/toni/Re160s10/case1/s10c.008
+Image              PC                Routine            Line        Source             
+tofis              0000000000447D8C  Unknown               Unknown  Unknown
+tofis              00000000004068B9  Unknown               Unknown  Unknown
+tofis              00000000004030BD  Unknown               Unknown  Unknown
+tofis              0000000000403006  Unknown               Unknown  Unknown
+libc.so.6          0000003E3781ED5D  Unknown               Unknown  Unknown
+tofis              0000000000402EF9  Unknown               Unknown  Unknown
+ Initalizing ...
+ /share/drive/toni/Re160s10/case1/s10c.009                                      
+  
+ /share/drive/toni/Re160s10/case1/s10c_009                                      
+  
+forrtl: No such file or directory
+forrtl: severe (29): file not found, unit 1, file /share/drive/toni/Re160s10/case1/s10c.009
+Image              PC                Routine            Line        Source             
+tofis              0000000000447D8C  Unknown               Unknown  Unknown
+tofis              00000000004068B9  Unknown               Unknown  Unknown
+tofis              00000000004030BD  Unknown               Unknown  Unknown
+tofis              0000000000403006  Unknown               Unknown  Unknown
+libc.so.6          0000003E3781ED5D  Unknown               Unknown  Unknown
+tofis              0000000000402EF9  Unknown               Unknown  Unknown
+ Initalizing ...
+ /share/drive/toni/Re160s10/case3/s10c.007                                      
+  
+ /share/drive/toni/Re160s10/case3/s10c_007                                      
+  
+ archivo abierto
+ time =    331.9907    
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case3/s10c.007                                       
+ 
+  swap in :  /share/drive/toni/swap                                                          
+ 
+  out in :  /share/drive/toni/Re160s10/case3/s10c_007                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo  0.8228000    
+ Parcial swap   21.54300    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8880000    
+ Parcial swap   57.75480    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8374000    
+ Parcial swap   16.47770    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8422000    
+ Parcial swap   7.989400    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8397000    
+ Parcial swap   4.930400    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8392000    
+ Parcial swap   4.084800    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8357000    
+ Parcial swap   4.891700    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8350000    
+ Parcial swap   3.783600    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8369000    
+ Parcial swap   5.117600    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8396000    
+ Parcial swap   3.580700    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8356000    
+ Parcial swap   3.316200    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8422000    
+ Parcial swap   4.318800    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8428000    
+ Parcial swap   3.169000    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8437000    
+ Parcial swap   3.240700    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8460000    
+ Parcial swap   3.693400    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8451000    
+ Parcial swap   3.319500    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8512000    
+ Parcial swap   3.538100    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo   1.205700    
+ Parcial swap   2.874900    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8480000    
+ Parcial swap   3.129900    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8514000    
+ Parcial swap   3.485600    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8437000    
+ Parcial swap   3.226100    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8473000    
+ Parcial swap   3.121100    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8470000    
+ Parcial swap   1.261700    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8469000    
+ Parcial swap   2.179100    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8457000    
+ Parcial swap   3.281500    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8389000    
+ Parcial swap   1.776500    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8456000    
+ Parcial swap   2.544700    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8442000    
+ Parcial swap   2.758400    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8419000    
+ Parcial swap   1.935800    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8385000    
+ Parcial swap   3.191700    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8459000    
+ Parcial swap   6.328900    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8411000    
+ Parcial swap   4.529900    
+ -----------------------------------------------
+ time for yz ops:   50033.39    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    27.35490    
+ swap   50005.99    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ nspec=         453
+ -----------------------------------------------
+ time for x ops:   70624474.6915000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   70674508.0858000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case3/s10c.008                                      
+  
+ /share/drive/toni/Re160s10/case3/s10c_008                                      
+  
+ archivo abierto
+ time =    372.3233    
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case3/s10c.008                                       
+ 
+  swap in :  /share/drive/toni/swap                                                          
+ 
+  out in :  /share/drive/toni/Re160s10/case3/s10c_008                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo  0.8744000    
+ Parcial swap   12.88350    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8466000    
+ Parcial swap   12.74230    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8468000    
+ Parcial swap   13.29450    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8464000    
+ Parcial swap   13.97470    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8402000    
+ Parcial swap   13.42110    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8430000    
+ Parcial swap   19.47470    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8468000    
+ Parcial swap   10.60380    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8494000    
+ Parcial swap   10.21020    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8478000    
+ Parcial swap   8.477800    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8480000    
+ Parcial swap   6.418300    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8440000    
+ Parcial swap   6.456100    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8457000    
+ Parcial swap   6.533500    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8834000    
+ Parcial swap   6.806500    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8450000    
+ Parcial swap   6.903800    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8468000    
+ Parcial swap   6.351100    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8458000    
+ Parcial swap   5.016900    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8523000    
+ Parcial swap   6.769700    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8454000    
+ Parcial swap   6.761600    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8397000    
+ Parcial swap   6.583200    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo  0.8401000    
+ Parcial swap   6.760200    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8399000    
+ Parcial swap   6.587800    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8441000    
+ Parcial swap   6.764700    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8380000    
+ Parcial swap   6.528700    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8394000    
+ Parcial swap   6.566400    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8391000    
+ Parcial swap   6.858700    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8003000    
+ Parcial swap   6.802100    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8371000    
+ Parcial swap   11.69460    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.9384000    
+ Parcial swap   8.273700    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8382000    
+ Parcial swap   7.351600    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8352000    
+ Parcial swap   9.529200    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8487000    
+ Parcial swap   8.964700    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8651000    
+ Parcial swap   8.942600    
+ -----------------------------------------------
+ time for yz ops:   48903.12    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    27.14110    
+ swap   48875.91    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ nspec=         453
+ -----------------------------------------------
+ time for x ops:   92980043.4750001     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   93028946.5904001     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------
+ Initalizing ...
+ /share/drive/toni/Re160s10/case3/s10c.009                                      
+  
+ /share/drive/toni/Re160s10/case3/s10c_009                                      
+  
+ archivo abierto
+ time =    415.1172    
+ Re=   160.0000    
+ inicializamos
+   Re =  160.00 channel
+  alp =   0.014   bet = 0.036
+ 
+ mgalx = 1536 mgalz =  576    my =  453
+    mx = 1024    mz =  383
+ 
+y planes =    1 xplanes   16
+ 
+reading from:  /share/drive/toni/Re160s10/case3/s10c.009                                       
+ 
+  swap in :  /share/drive/toni/swap                                                          
+ 
+  out in :  /share/drive/toni/Re160s10/case3/s10c_009                                       
+ Fin precalculo de matrices...
+ Allocated memory:         216 MB
+ Plane:            1 of          512
+ calling uvwyzx
+ parcial calculo  0.8733000    
+ Parcial swap   10.03850    
+ Plane:           17 of          512
+ calling uvwyzx
+ parcial calculo  0.8473000    
+ Parcial swap   9.242100    
+ Plane:           33 of          512
+ calling uvwyzx
+ parcial calculo  0.8478000    
+ Parcial swap   10.15680    
+ Plane:           49 of          512
+ calling uvwyzx
+ parcial calculo  0.8395000    
+ Parcial swap   9.713200    
+ Plane:           65 of          512
+ calling uvwyzx
+ parcial calculo  0.8463000    
+ Parcial swap   7.030600    
+ Plane:           81 of          512
+ calling uvwyzx
+ parcial calculo  0.8725000    
+ Parcial swap   10.74660    
+ Plane:           97 of          512
+ calling uvwyzx
+ parcial calculo  0.8381000    
+ Parcial swap   5.787100    
+ Plane:          113 of          512
+ calling uvwyzx
+ parcial calculo  0.8373000    
+ Parcial swap   4.752400    
+ Plane:          129 of          512
+ calling uvwyzx
+ parcial calculo  0.8376000    
+ Parcial swap   5.270100    
+ Plane:          145 of          512
+ calling uvwyzx
+ parcial calculo  0.8418000    
+ Parcial swap   3.517900    
+ Plane:          161 of          512
+ calling uvwyzx
+ parcial calculo  0.8376000    
+ Parcial swap   3.758000    
+ Plane:          177 of          512
+ calling uvwyzx
+ parcial calculo  0.8451000    
+ Parcial swap   4.389700    
+ Plane:          193 of          512
+ calling uvwyzx
+ parcial calculo  0.8423000    
+ Parcial swap   3.057000    
+ Plane:          209 of          512
+ calling uvwyzx
+ parcial calculo  0.8425000    
+ Parcial swap   3.059600    
+ Plane:          225 of          512
+ calling uvwyzx
+ parcial calculo  0.8455000    
+ Parcial swap   3.980700    
+ Plane:          241 of          512
+ calling uvwyzx
+ parcial calculo  0.8407000    
+ Parcial swap   2.662200    
+ Plane:          257 of          512
+ calling uvwyzx
+ parcial calculo  0.8365000    
+ Parcial swap   3.727600    
+ Plane:          273 of          512
+ calling uvwyzx
+ parcial calculo  0.8378000    
+ Parcial swap   2.765500    
+ Plane:          289 of          512
+ calling uvwyzx
+ parcial calculo  0.8426000    
+ Parcial swap   2.900700    
+ Plane:          305 of          512
+ calling uvwyzx
+ parcial calculo   1.007900    
+ Parcial swap   3.438300    
+ Plane:          321 of          512
+ calling uvwyzx
+ parcial calculo  0.8383000    
+ Parcial swap   2.754200    
+ Plane:          337 of          512
+ calling uvwyzx
+ parcial calculo  0.8370000    
+ Parcial swap   2.899000    
+ Plane:          353 of          512
+ calling uvwyzx
+ parcial calculo  0.8385000    
+ Parcial swap   2.817100    
+ Plane:          369 of          512
+ calling uvwyzx
+ parcial calculo  0.8470000    
+ Parcial swap   2.770000    
+ Plane:          385 of          512
+ calling uvwyzx
+ parcial calculo  0.8435000    
+ Parcial swap   2.950300    
+ Plane:          401 of          512
+ calling uvwyzx
+ parcial calculo  0.8372000    
+ Parcial swap   1.343300    
+ Plane:          417 of          512
+ calling uvwyzx
+ parcial calculo  0.8400000    
+ Parcial swap   3.339600    
+ Plane:          433 of          512
+ calling uvwyzx
+ parcial calculo  0.8333000    
+ Parcial swap   3.776900    
+ Plane:          449 of          512
+ calling uvwyzx
+ parcial calculo  0.8452000    
+ Parcial swap   3.490200    
+ Plane:          465 of          512
+ calling uvwyzx
+ parcial calculo  0.8471000    
+ Parcial swap   4.273800    
+ Plane:          481 of          512
+ calling uvwyzx
+ parcial calculo  0.8453000    
+ Parcial swap   5.117500    
+ Plane:          497 of          512
+ calling uvwyzx
+ parcial calculo  0.8380000    
+ Parcial swap   4.399200    
+ -----------------------------------------------
+ time for yz ops:  -166065.3    
+ -----------------------------------------------
+ -----------------------------------------------
+ Calculo de u y du    27.15040    
+ swap  -166092.5    
+ -----------------------------------------------
+ Allocated memory:          52 MB
+  Computing plane          10 of         453
+  Computing plane          20 of         453
+  Computing plane          30 of         453
+  Computing plane          40 of         453
+  Computing plane          50 of         453
+  Computing plane          60 of         453
+  Computing plane          70 of         453
+  Computing plane          80 of         453
+  Computing plane          90 of         453
+  Computing plane         100 of         453
+  Computing plane         110 of         453
+  Computing plane         120 of         453
+  Computing plane         130 of         453
+  Computing plane         140 of         453
+  Computing plane         150 of         453
+  Computing plane         160 of         453
+  Computing plane         170 of         453
+  Computing plane         180 of         453
+  Computing plane         190 of         453
+  Computing plane         200 of         453
+  Computing plane         210 of         453
+  Computing plane         220 of         453
+  Computing plane         230 of         453
+  Computing plane         240 of         453
+  Computing plane         250 of         453
+  Computing plane         260 of         453
+  Computing plane         270 of         453
+  Computing plane         280 of         453
+  Computing plane         290 of         453
+  Computing plane         300 of         453
+  Computing plane         310 of         453
+  Computing plane         320 of         453
+  Computing plane         330 of         453
+  Computing plane         340 of         453
+  Computing plane         350 of         453
+  Computing plane         360 of         453
+  Computing plane         370 of         453
+  Computing plane         380 of         453
+  Computing plane         390 of         453
+  Computing plane         400 of         453
+  Computing plane         410 of         453
+  Computing plane         420 of         453
+  Computing plane         430 of         453
+  Computing plane         440 of         453
+  Computing plane         450 of         453
+ nspec=         453
+ -----------------------------------------------
+ time for x ops:   17963511.0168000     
+ -----------------------------------------------
+ -----------------------------------------------
+             dealocateado                       
+ -----------------------------------------------
+ we are now just about to deallocate
+ -----------------------------------------------
+ Total   17797445.6895000     
+ -----------------------------------------------
+ 
+ -----------------------------------------------
+ -----------------------------------------------

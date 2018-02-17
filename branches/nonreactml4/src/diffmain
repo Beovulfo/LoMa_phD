@@ -1,0 +1,191 @@
+72c72
+<       real(realprec) :: u00(my),w00(my)
+---
+>       real(8) :: u00(my),w00(my)
+74,78c74,77
+<       real(realprec) :: val8 
+<       real(realprec) ::  v00(my) 
+<       real(realprec), allocatable:: vor(:),phi(:),wk(:),
+<      .                      psi(:),scal(:), mfz(:)
+<       real(4), allocatable :: sp(:)
+---
+>       real(8) ::  v00(my) 
+>       real(4), allocatable:: vor(:),phi(:),wk(:),
+>      .                      psi(:),scal(:),sp(:),
+>      .                      mfz(:)
+137,139c136
+<       nbuffsize =max((pe-pb+1)*2*my*mgalz,(le-lb+1)*mx)
+<        !complex double prec
+<       !nbuffsize = max((pe-pb+1)*2*my*mgalz,(le-lb+1)*mx)
+---
+>       nbuffsize = max((pe-pb+1)*2*my*mgalz,(le-lb+1)*mx)
+141,144c138,139
+<       nbuffsizephys =doubleprec/realprec*max((pe-pb+1)*my*mgalz,
+<      .                   (le-lb+1)*mgalx)
+<       nwkasize  = 14*nbuffsize + 4/realprec*12*my +
+<      .             3*nbuffsizephys*doubleprec/realprec
+---
+>       nbuffsizephys =1*(le-lb+1)*mgalx
+>       nwkasize  = 14*nbuffsize + 12*my + 4*nbuffsizephys
+161c156
+<           nwkasize = 5*2*mmp*my*mz+1000
+---
+>           nwkasize = 10*mmp*my*mz
+184,209d178
+<           ! start time advancement  !
+<       irf0u   = 1
+<       irf0w   = irf0u   +  doubleprec/realprec*my  ! Real*8
+<       irf0v   = irf0w   +  doubleprec/realprec*my  ! Real*8
+<       iu00wk  = irf0v   +  doubleprec/realprec*my
+<       iw00wk  = iu00wk  +  doubleprec/realprec*my  
+<       iv00wk  = iw00wk  +  doubleprec/realprec*my  
+<       imxwk   = iv00wk  +  doubleprec/realprec*my
+<       imywk   = imxwk   + nbuffsize
+<       imzwk   = imywk   + nbuffsize
+<       inxwk   = imzwk   + nbuffsize
+<       inywk   = inxwk   + nbuffsize
+<       inzwk   = inywk   + nbuffsize
+<       irhst   = inzwk   + nbuffsize
+<       irhsz   = irhst   + nbuffsize
+<       ilapz   = irhsz   + nbuffsize
+<       idrho   = ilapz   + nbuffsize
+<       iten12  = idrho   + nbuffsize
+<       iten13  = iten12  + nbuffsize
+<       iten23  = iten13  + nbuffsize
+<       iTphys   = iten23  + nbuffsize
+<       idhache = iTphys  + nbuffsizephys*doubleprec/realprec
+<       idzeta  = idhache + nbuffsizephys*doubleprec/realprec
+<       ichwk   = idzeta  + nbuffsizephys*doubleprec/realprec
+<  
+<       
+230,231c199,224
+<      
+<       call MPI_BARRIER(MPI_COMM_WORLD,ierr)
+---
+>       
+>           ! start time advancement  !
+>       irf0u   = 1
+>       irf0w   = irf0u   + 2 * my  ! Real*8
+>       irf0v   = irf0w   + 2 * my  ! Real*8
+>       iu00wk  = irf0v   + 2 * my
+>       iw00wk  = iu00wk  + 2 * my  
+>       iv00wk  = iw00wk  + 2 * my  
+>       imxwk   = iv00wk  + 2 * my
+>       imywk   = imxwk   + nbuffsize
+>       imzwk   = imywk   + nbuffsize
+>       inxwk   = imzwk   + nbuffsize
+>       inywk   = inxwk   + nbuffsize
+>       inzwk   = inywk   + nbuffsize
+>       irhst   = inzwk   + nbuffsize
+>       irhsz   = irhst   + nbuffsize
+>       ilapz   = irhsz   + nbuffsize
+>       idrho   = ilapz   + nbuffsize
+>       iten12  = idrho   + nbuffsize
+>       iten13  = iten12  + nbuffsize
+>       iten23  = iten13  + nbuffsize
+>       iTphys   = iten23  + nbuffsize
+>       idhache = iTphys  + 2*nbuffsizephys
+>       idzeta  = idhache + nbuffsizephys
+>       ichwk   = idzeta  + nbuffsizephys
+>       
+371c364
+<       real(realprec) ::vor(2*my,mz,*),phi(2*my,mz,*),
+---
+>       real(4) ::vor(2*my,mz,*),phi(2*my,mz,*),wk1(10*my*mz),
+373,374c366
+<       real(4) :: wk1(10*my*mz)
+<       real(doubleprec):: u00(*),v00(*),w00(*)
+---
+>       real(8):: u00(*),v00(*),w00(*)
+377c369
+<       real(doubleprec) :: fmape(my) 
+---
+>       real(8) :: fmape(my) 
+438c430
+<      .           scal(1,1,i),mfz(1,1,i),mye,mze,myid,i)
+---
+>      .                  scal(1,1,i),mfz(1,1,i),my,mz,mye,mze,myid,i)
+523c515
+<       real(4) dat(ndat),Delt,zero,Ree,alpe,bete,a0e
+---
+>       real(4) dat(ndat),pi,Delt,zero,Ree,alpe,bete,a0e
+525d516
+<       real(8) :: pi
+531c522
+<       pi=4.*atan(1.)
+---
+>       Pi=4.*atan(1.)
+597c588
+<       Deltat = 1E-5 
+---
+>       Deltat = 0.00001 
+603c594
+<       S   = dat(8)
+---
+>       Zs  = dat(8)
+608a600
+>       if (myid.eq.0) then
+610c602
+<       Zs = 1.0/(1.0+S)
+---
+>       S = 1/Zs-1
+614,627d605
+<       !Diffusitivy time-step factor:
+<       ! the maximum diffusivity factor of the 3 equations implied
+<       ! Momentum:nu/nu_a=>T^(sigma+1)/Re
+<       ! H equation:nu/(nu_a*Pr) => T^(sigma+1)/Pe
+<       ! Z equation: nu/(nu_a*Pr)*(S/Lf+1)/(S+1) => T^(sigma+1)/Pe*iLm
+<       if (myid.eq.0) then
+<         diffcoef=0d0;
+<         diffcoef=max(max(1d0/Re,1d0/peclet),iLm/peclet)
+<         write(*,*) "ire=,",1/Re,"ipeclet=",1/peclet, "iLm=",iLm
+<         write(*,*) 'Diffusivity coefficient for time-step = ',diffcoef
+<       !!else
+<       !  !write(*,*) 'Diffusivity coefficient for time-step = ',diffcoef
+<       endif
+<       
+630a609,610
+>       cteintT = 0.0d0
+>       endif
+661,662d640
+<             call MPI_SEND(diffcoef,1,MPI_REAL8,iproc,
+<      &                 iproc,MPI_COMM_WORLD,ierr)
+672,673d649
+<          call MPI_RECV(diffcoef,1,MPI_REAL8,0,
+<      &                MPI_ANY_TAG,MPI_COMM_WORLD,istat,ierr)
+688,690d663
+<          !debug
+<          write(*,*) "pointers_calc myid,pb,pe,mmp,mml:",
+<      .               myid, pb,pe,mmp,mml
+697,698c670,671
+<          !write(*,*) "pointers_save info---"
+<          !write(*,*) myid, pb,pe,mmp
+---
+>          write(*,*) "pointers_save info---"
+>          write(*,*) myid, pb,pe,mmp
+920c893
+<      .                  mye,mze,myid,planex)
+---
+>      .                  my,mz,mye,mze,myid,planex)
+923d895
+<       include "ctes3D"
+925,927c897,899
+<       integer   mym,mzm,klen,kini1,kini2,j,k,k1,k2,mye,mze
+<       real(realprec)    vor(2*my,mz),phi(2*my,mz)
+<       real(realprec)    psi(2*my,mz),scal(2*my,mz),mfz(2*my,mz)
+---
+>       integer   mym,mzm,klen,kini1,kini2,j,k,k1,k2,my,mz,mye,mze
+>       real(4)    vor(2*my,mz),phi(2*my,mz)
+>       real(4)    psi(2*my,mz),scal(2*my,mz),mfz(2*my,mz)
+929c901
+<       real(realprec)    zero
+---
+>       real(4)    zero
+990d961
+<       include "ctes3D"
+992c963
+<       real(realprec) u(n)
+---
+>       real*4 u(n)
+1141a1113
+> 

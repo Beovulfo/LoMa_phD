@@ -1,0 +1,58 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC     1000       0.364     2.912         0.0
+CC      100     0.364     2.9122    0.0
+CC nice solution:
+CC   1000     0.1      21.0     0.0
+CC           Dx = Dz = 0.03
+     10      0.0341     10.02     0.0
+CC     10      0.0682     19.04     0.0
+CC   
+CC   1000     0.05      21.0     0.0
+CC    dm0     u0       s (density ratio)(rho0=1.0)          
+CC    *       *        *
+CC----------------------------------------
+CC       1.0      1.0     1.0
+CC   nymax        nhmin           nhmax        swin 
+CC max waves y  min hor. wave   peak waves    swin*dm0
+CC      *           *               *           *
+CC nhmax such that k0 is aproximately the most unstable:k0= 1.0,nhmax = k0/alp
+CC PantB
+      1               1            3           0.1 
+CC  urmstarget   vrmstarget   wrmstarget
+CC      *               *          *  
+      0.0             0.0        0.0
+CC    gam      Scomb       LF         betha
+CC      4.0      2.6666       1.5        1E5
+       4.0       4.0         2.0        1E5
+CC       4.0       4.0          2.0        1E5
+CC      4.0        0.5         0.3        1E5
+CC      4.0      15.0         0.3        1E5
+CC      4.0      4.0         0.3        1E5
+CC      4.0      1.0         2        1E5
+CC PANTANO used as reference for input generation
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/share/drive/toni/RML/vortex/ICS04LF20.dat
+/share/drive/toni/RML/vortex/ICS04LF20x2.dat
+CC/share/drive/toni/RML/vortex/ICS04LF03.dat
+CC/share/drive/toni/RML/vortex/ICS04LF20.dat
+CC/share/drive/toni/RML/vortex/ICS15LF20.dat
+CC/share/drive/toni/RML/vortex/ICS15LF03.dat
+CC/share/drive/toni/RML/vortex/ICS04LF03.dat
+CC/share/drive/toni/RML/vortex/ICS01LF20.dat
+CC/share/drive/toni/RML/vortex/ICS15LF20.dat
+CC Ly=80, Dy_mid = 0.0222
+/home/toni/Ly80my1001.txt

@@ -1,0 +1,511 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 1.0 (31/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[titlepage,11pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+\usepackage{hyperref}
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[english]{babel}  %Activate for spanish
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{listings}     %For including code
+\usepackage{amssymb,latexsym,amsmath,amsthm}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage[cc]{titlepic} %formato de cover picture
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+%\usepackage[T1]{fontenc} 
+%\usepackage[utf8]{inputenc}     %necesario para mostrar acentos
+%\usepackage[left]{showlabels,rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+% Allows the use of \toprule, \midrule and \bottomrule in tables for horizontal lines
+%\usepackage[final]{showlabels,rotating} %dont show labels
+%\renewcommand{\showlabelsetlabel}[1]
+ %   {\begin{turn}{10}\showlabelfont #1\end{turn}} 
+\newcommand{\sectionbreak}{\clearpage}
+\renewcommand{\arraystretch}{1.25}
+
+
+
+
+%Headers for mathematics
+\newcommand\ppt[1]{\cfrac{\partial#1}{\partial t}} %partial of #1 respect of time
+\newcommand\pppt[1]{\cfrac{\partial^2#1}{\partial t^2}} %partial of #1 respect of time
+\newcommand\ppppt[1]{\cfrac{\partial^3#1}{\partial t^3}} %partial of #1 respect of time
+\newcommand\pppppt[1]{\cfrac{\partial^4#1}{\partial t^4}} %partial of #1 respect of time
+\newcommand\pprho[1]{\cfrac{\partial#1}{\partial \rho}} %partial of #1 respect of time
+\newcommand\pprhopp[1]{\cfrac{\partial#1}{\partial \rho^2}} %partial of #1 respect of time
+\newcommand\pprhoppp[1]{\cfrac{\partial#1}{\partial \rho^3}} %partial of #1 respect of time
+\newcommand\pprhopppp[1]{\cfrac{\partial#1}{\partial \rho^4}} %partial of #1 respect of time
+\newcommand\ppx[1]{\cfrac{\partial#1}{\partial x}} %partial of #1 respect x
+\newcommand\ppy[1]{\cfrac{\partial#1}{\partial y}} %partial of #1 respect y
+\newcommand\ppz[1]{\cfrac{\partial#1}{\partial z}} %partial of #1 respect z
+\newcommand\ppi[1]{\cfrac{\partial#1}{\partial x_i}} %partial of #1 respect xi
+\newcommand\ppj[1]{\cfrac{\partial#1}{\partial x_j}} %partial of #1 respect xj
+\newcommand\pppy[1]{\cfrac{\partial^2#1}{\partial y^2}} %partial of #1 respect y2
+\newcommand\pppx[1]{\cfrac{\partial^2#1}{\partial x^2}} %partial of #1 respect x2
+\newcommand\pppz[1]{\cfrac{\partial^2#1}{\partial z^2}} %partial of #1 respect z2
+
+\newcommand\ppr[1]{\cfrac{\partial#1}{\partial r}} %partial of #1 respect of time
+\newcommand\ppphi[1]{\cfrac{\partial#1}{\partial \phi}} %partial of #1 respect of time
+\newcommand\ppptheta[1]{\cfrac{\partial^2#1}{\partial \theta^2}} %partial of #1 respect of time
+\newcommand\pppr[1]{\cfrac{\partial^2#1}{\partial r^2}} %partial of #1 respect of time
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\JournalInfo{Journal, Vol. XXI, No. 1, feb, 2014} % Journal information
+%\Archive{} % Additional notes (e.g. copyright, DOI, review/research article)
+\begin{document}
+
+
+\title{LOMA Code: Equations and Algorithms} % Article title
+
+\author{Antonio Almagro}%, James Smith\textsuperscript{2}} % Authors
+%\affiliation{\textsuperscript{1}\textit{Department of Aerospace, Universidad Carlos III, Madrid, Spain}} % Author affiliation
+%\affiliation{\textsuperscript{2}\textit{Department of Chemistry, University of Examples, London, United Kingdom}} % Author affiliation
+%\affiliation{*\textbf{Corresponding author}: aalmagro@ing.uc3m.es} % Corresponding author
+
+%\Keywords{Low-Mach Equations } % Keywords - if you don't want any simply remove all the text between the curly brackets
+%\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+\date{\today}
+
+\maketitle % Print the title and abstract box
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+	This document contain everything needed to develope the code named LOMA for turbulent compressible mixing layer simulations.
+\end{abstract}
+
+
+\tableofcontents % Print the contents section
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+%------------------------------------------------
+
+\section{N-S Low Mach Number Equations.}
+
+%\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+%\includegraphics[width=\linewidth]{view}
+%\caption{Wide Picture}
+%\label{fig:view}
+%\end{figure*}
+
+Working under the Low Mach Number aproximation, the split of the pressure into dynamic(using superscript 1) and static components, leaves these equations to solve:
+
+ \begin{equation}
+\ppt{\rho}+\ppi{}(\rho u_i)=0
+\label{eq:continuity}
+\end{equation}
+
+ \begin{equation}
+\ppt{}(\rho u_i)+\ppj{}(\rho u_i u_j)=-\ppi{p^{(1)}}+\frac{1}{Re}\ppj{\tau_{ij}}
+\label{eq:momentum}
+\end{equation}
+
+ \begin{equation}
+\ppt{T}+u_i \ppi{T}=\frac{1}{\rho C_p Pe}\ppi{}\left( k \ppi{T} \right)
+\label{energy}
+\end{equation}
+
+%\lipsum[4] % Dummy text
+
+\begin{equation}
+\rho=\rho(p(t),T)
+\label{eq:EOS1}
+\end{equation}
+
+With: 
+
+\begin{equation}
+\tau_{ij}=\mu[2 S_{ij}-\frac{2}{3} (S_{11}+S_{22}+S_{33}) \delta_{ij}]
+\label{eq:tau}
+\end{equation}
+
+\begin{equation}
+S_{ij}=\frac{1}{2} \left( \ppj{u_i}+\ppi{u_j} \right)
+\label{eq:Sij}
+\end{equation}
+
+Where all variables have been scaled in order to achieve their nondimensional form, as: 
+
+\begin{equation}
+	\begin{array}{lcl}
+		u_i    &=& u_i^{*}/U              \\  
+		\rho &=& \rho^{*}/\rho_0 \\
+		x_i   &=& x_i^{*}/L                  \\
+		t       &=& t^{*}/(L/U)                   \\
+		\mu &=& \mu^{*}/\mu_0    \\
+		k      &=& k^{*}/k_0                      \\
+		C_p &=& C_p^{*}/C_{p0}      \\
+		p^{(1)}&=&p^{*(1)}/(\rho_0 U^2)
+	\end{array}
+\end{equation}
+The dimensionless parameters that govern the problem defined as follow:
+
+
+\begin{equation}
+	\begin{array}{lcl}
+		Re=\frac{\rho_0 U L}{\mu_0}  \\
+		Pe=\frac{\rho_0 C_{p0} U L}{k_0}  
+	\end{array}
+\end{equation}
+
+
+
+%------------------------------------------------
+
+The equation \ref{eq:EOS1} is given by the Equation of State, and using the EOS for ideal gas:
+\begin{equation}
+p = \rho T
+\label{eq:EOS2}
+\end{equation}
+
+In the case of study, the static pressure remains constant, so that the EOS in dimensionless form translates into the relation $\rho=1/T$. Note that $p_0=\rho_0 R T_0$.
+
+\section{Properties changing with Temperature}
+
+In order to capture the variation of the different coefficients with respect to the temperature, we substitute these coefficients using the next relations:
+\begin{equation}
+\mu=k=\rho D=T^{\sigma}
+\end{equation}
+
+With $\sigma=0.7$, and
+\begin{equation}
+	C_p=C_p^{*}/C_{p0}=1
+\end{equation}
+
+So, $C_p$ has been assumed constant. A little tick to consider some variatons of $C_p$ with temperature could be to introduce it into the divergence of the Energy Equation, so that we can define $k/C_p=f(T)$.
+
+\section{Energy Equation}
+
+Taking into account the considerations explained before, we can express the energy equation as:
+ \begin{equation}
+	\ppt{T}=-u_i \ppi{T}+\frac{T}{Pe}\ppi{}\left( T^{\sigma} \ppi{T} \right)
+	\label{energy2}
+\end{equation}
+
+And expanding the diffusion term,
+
+\begin{equation}
+	\ppt{T}=-u_i \ppi{T}+\frac{\sigma T^{\sigma}}{Pe}\ppi{T} \ppi{T}+ \frac{T^{\sigma+1}}{Pe} \nabla^2{T}
+	\label{eq:energy3}
+\end{equation}
+
+\section{Velocity-Vorticity Expansion Formulation}
+
+Using Helmholtz decomposition, the momentum can be written as
+\begin{equation}
+\rho \vec{u}= \vec{m}+\nabla{\psi}
+\label{eq:helmholtz}
+\end{equation}
+
+Where $\vec{m}$ is the divergence free component and $\nabla \psi$ is the curl free component, so that
+\begin{equation}
+\nabla \cdot \rho \vec{u}=\nabla^2 \psi
+\end{equation}
+
+\begin{equation}
+\vec{\Omega} = \nabla \times \rho \vec{u}=\nabla \times \vec{m} 
+\end{equation}
+
+And using the property from taking curl of the curl:
+\begin{equation}
+\nabla \times \vec{\Omega} = -\nabla^2 \vec{m}
+\end{equation}
+
+In analogy to the incompressible formulation where we evolve $\omega_y$ and $\phi=\nabla^2 v$, we will evolve $\Omega_y$ and $\phi=\nabla^2 m_y$.
+
+The momentum equation (\ref{eq:momentum}) can be rewritten as,
+\begin{equation}
+\ppt{\rho \vec{u}}=\vec{N}-\nabla p + \frac{1}{Re}\vec{M}
+\label{eq:momentum2}
+\end{equation}
+
+Where:
+
+\begin{equation}
+	\begin{array}{lcl}
+		N_i &=&-\ppj{}(\rho u_i u_j) \\
+		M_i &=& \ppj{\tau_{ij}} 
+	\end{array}
+\end{equation}
+
+
+With the viscous stress already defined in(\ref{eq:tau})
+
+Taking the curl of (\ref{eq:momentum2}) we obtain the equation evolution for $\Omega_y$ as, 
+\begin{equation}
+\ppt{\Omega_y}=\ppz{N_x}-\ppx{N_z}+\frac{1}{Re}\left( \ppz{M_x}-\ppx{M_z} \right)
+\label{eq:omegay}
+\end{equation}
+
+where he have used that the curl of the gradient is zero in order to eliminate the pressure.
+
+Taking now the curl of equation (\ref{eq:omegay}) and rearranging terms, we have:
+\begin{equation}
+	\begin{array}{lcl}
+		\ppt{\phi}=\pppx{}\left( N_y+\frac{M_y}{Re}\right)+\pppz{} \left( N_y+\frac{M_y}{Re} \right)- 
+		\ppy{} \left( \ppx{} \left( N_x+\frac{M_x}{Re} \right)+\ppz{} \left( N_z+\frac{M_z}{Re} \right) \right)
+	\end{array}
+	\label{eq:phi}
+\end{equation}
+
+
+\section{Modes 00}
+\label{sec:modes00}
+
+From Momentum equation (\ref{eq:momentum}), taking the average over $xz$ planes we can obtain the evolution equations for modes 00 of $\rho u$ and $\rho w$, as follow,
+
+
+\begin{equation}
+	\begin{array}{lcl}
+		\ppt{\langle \rho u \rangle}=-\ppy{ \langle \rho u v \rangle}+\frac{1}{Re} \ppy{ \langle \tau_{xy} \rangle} \\
+		\ppt{\langle \rho w \rangle}=-\ppy{\langle \rho w v \rangle}+\frac{1}{Re} \ppy{\langle \tau_{zy} \rangle} 
+	\end{array}
+         \label{eq:modes00}
+\end{equation}
+
+Or, using different notation similar to the one used on the rest of evolution equations:
+\begin{equation}
+	\begin{array}{lcl}
+		\ppt{\rho u 00}=N00_x+\frac{1}{Re} M00_x \\
+		\ppt{\rho w 00}=N00_z+\frac{1}{Re} M00_z  
+	\end{array}
+         \label{eq:modes002}
+\end{equation}
+
+
+
+
+\section{Flowchart of LOMA code}
+
+In the next page we present a scheme of the code's flow. In this section we will try to expand each process (marked as white rectangles).
+
+\begin{enumerate}
+	\item Laplacian Solver  ($\phi=\nabla^2 m_y$)\\
+Here we will obtain $m_y$ and $\ppy{m_y}$ needed to calculate the rest of $\vec{m}$ components. It is important to pay attention to the Boundary Conditions imposed when solving the Laplacian.
+	\item Solver (for $m_x$ and $m_z$) \\
+The system we need to solve comes from the divergence zero of $\vec{m}$ and the definition of $\Omega_y$, explicitly:
+
+
+\begin{equation}
+	\begin{array}{lcl}
+		-\ppy{m_y}&=&\ppx{m_x}+\ppz{m_z} \\
+		\Omega_y &=&\ppz{m_x}-\ppx{m_z} 
+	\end{array}
+\end{equation}
+
+And solving for $m_x$, $m_z$:
+
+\begin{equation}
+	\begin{array}{lcl}
+		\displaystyle m_x&=&\frac{i k_x}{k_x^2+k_z^2}\ppy{m_y}-\frac{i k_z}{k_x^2+k_z^2}\Omega_y \\
+		\displaystyle m_z&=&\frac{i k_z}{k_x^2+k_z^2}\ppy{m_y}+\frac{i k_x}{k_x^2+k_z^2}\Omega_y
+		\label{eq:mxmz}
+	\end{array}
+\end{equation}
+
+\item Obtain $\rho \vec{u}$\\
+From $\psi$ we need to calculate $\ppy{\psi}$, with the already known values for $m_i$ we get $\rho u_i$ using (\ref{eq:helmholtz}) :
+\begin{equation}
+	\begin{array}{lcl}
+		\rho u &=& m_x + \ppx{\psi} =m_x+i k_x \psi \\
+		\rho w &=& m_z+ \ppz{\psi} =m_z+i k_z \psi \\
+		\rho v &=& m_y + \ppy{\psi} 	
+	\end{array}
+\end{equation}
+
+Looking at equation \ref{eq:mxmz}, it seems clear that we need to find a different way to estimate $\rho u (0,0)$ and $\rho w (0,0)$. As explained in \ref{sec:modes00} we will evolve separately these terms. In this step we save these $(0,0)$ modes into the buffers of $\rho u$ and $\rho w$ before entering to the first transformation from Fourier space to Physical domain.
+
+\item Calculating derivatives of $T$\\
+In order to calculate the nonlinear terms in physical domain we need $T$, $\ppi{T}$ and $\nabla^2 T$, all terms using their own buffer. First of all, we need to obtain $\ppy{T}$, because we use CFD in the vertical direction ($y$), instead of Fourier expansions as the horizontal and transversal directions ($x$ and $z$). Same thing happening with $\pppy{T}$ for the laplacian.
+
+\item Entering FOU2PHYS \\
+We enter here with $\rho u_i$, $T$, $\ppi{T}$ and $\nabla^2 T$. In order to obtain the $RHS$ of equations (\ref{eq:energy3}), (\ref{eq:omegay}) and (\ref{eq:phi}), first we calculate the following terms as follow:
+\begin{equation}
+	\begin{array}{lcl}
+		u _i &=& \rho u_i T \\
+		\rho u_i u_j  &=& \rho u_i \rho u_j T \\
+                   RHS(T)&=& -u_i \ppi{T}+\frac{\sigma T^{\sigma}}{Pe}\ppi{T} \ppi{T}+ \frac{T^{\sigma+1}}{Pe} \nabla^2{T}
+	\end{array}
+\end{equation}
+
+Notice that we are using triple products in physical domain, so that, alisasing effects can occur.
+
+\item Exiting PHYS2FOU \\
+We translate into Fourier series a total of ten variables, separated in three different groups following the next operations:
+
+\begin{enumerate}
+	\item RHS(T,n): in addition to the RHS(T,n-1) from the last substep and the variable T we can compute T(n+1) using the 					next R-K step scheme:
+		\begin{equation}
+			T^{i+1}=T^{i}+\Delta t \gamma_i RHS(T,i)+\Delta t \xi_i RHS(T,i-1)
+		\end{equation}
+
+	\item Convective products ($\rho u_i u_j$):
+		\begin{equation}
+			\begin{array}{lcl}
+				N_{x}&=&-\ppx{\rho u u}- \ppy{\rho u v}-\ppz{\rho u w}\\
+				N_{y}&=&-\ppx{\rho v u}- \ppy{\rho v v}-\ppz{\rho v w}\\
+				N_{z}&=&-\ppx{\rho w u}- \ppy{\rho w v}-\ppz{\rho w w}
+			\end{array}
+		\end{equation}
+		We have six buffers  and we need to compute only three terms, this let us re-use the three remaining in order to compute the stress tensor $S_{ij}$ as stated below.  It is important to remember saving the 00 modes components (these will be used on the evolution equations of the 00 modes).
+		\begin{equation}
+			\begin{array}{lcl}
+				N00_{x}&=&- \ppy{\rho u v (0,0)}\\
+				N00_{z}&=&- \ppy{\rho w v (0,0)}
+			\end{array}
+		\end{equation}
+
+
+	\item $u,v,w$: from the velocities (three buffers) we can compute their derivatives in order to obtain the tensor $S_{ij}$ components (six buffers):
+		\begin{equation}
+			\begin{array}{lcl}
+				S_{11}&=&\ppx{u}=i k_x u \\
+                                      S_{33}&=&\ppz{w}=i k_z w \\
+				S_{22}&=&\ppy{v} \\
+                         		S_{13}&=& \frac{1}{2}\left(\ppz{u}+\ppx{w}\right)=\frac{1}{2}\left( i k_z u+ i k_x w \right) \\
+				S_{12}&=& \frac{1}{2}\left(\ppy{u}+\ppx{v} \right)=\frac{1}{2}\left( \ppy{u}+ i k_x v \right) \\
+				S_{23}&=& \frac{1}{2}\left(\ppy{w}+\ppz{v} \right)=\frac{1}{2}\left( \ppy{w}+ i k_z v \right) 
+			\end{array}
+		\end{equation}
+     Therefore, in order to compute all these terms we need first to calculate the derivatives on $y$ of $u$, $v$ and $w$. 
+\end{enumerate}
+	
+\item  Entering FOU2PHYS (2nd time) \\
+	Entering with T, T(n+1) and the six components of $S_{ij}$, we perfom the following operations in physical domain:
+		\begin{equation}
+			\begin{array}{lcl}
+				\tau_{11}&=&\mu \left( 2S_{11}-2/3\left(S_{11}+S_{22}+S_{33}\right) \right) \\
+				\tau_{22}&=&\mu \left( 2S_{22}-2/3\left(S_{11}+S_{22}+S_{33}\right) \right) \\
+				\tau_{33}&=&\mu \left( 2S_{33}-2/3\left(S_{11}+S_{22}+S_{33}\right) \right) \\
+				\tau_{12}&=&2 \mu S_{12} \\
+				\tau_{13}&=&2 \mu S_{13} \\
+				\tau_{23}&=&2 \mu S_{23} \\
+				\Delta \rho &=& \frac{1}{T(n+1)}-\frac{1}{T}
+			\end{array}
+		\end{equation}
+	With $\mu=T^\sigma$.
+	In addition, we need to calculate two terms for the evolution of the modes 00:
+	\begin{equation}
+			\begin{array}{lcl}
+				M00_{x}&=& \ppy{\tau_{12} (0,0)}\\
+				M00_{z}&=& \ppy{\tau_{23} (0,0)}
+			\end{array}
+		\end{equation}
+
+
+
+\item Exiting PHYS2FOU (2nd time) \\
+
+\begin{enumerate}
+
+
+	\item
+	First, we have all components from the $\tau_{ij}$ tensor, so that we can compute $\vec{M}$ components:
+		\begin{equation}
+			\begin{array}{lcl}
+				M_{x}&=&i k_x{\tau_{11}} + \ppy{\tau_{12}} + i k_z{\tau_{13}}\\
+				M_{y}&=&i k_x{\tau_{12}} + \ppy{\tau_{22}} + i k_z{\tau_{23}}\\
+				M_{z}&=&i k_x{\tau_{13}} + \ppy{\tau_{23}} + i k_z{\tau_{33}}
+			\end{array}
+		\end{equation}
+
+	\item
+	From $\Delta \rho$ we can calculate the next step $\nabla^2 \psi$ solving the implicit Runge-Kutta time step for $\rho$:
+
+	\begin{equation}
+		\nabla^2 \psi^{i+1}=-\frac{\Delta \rho}{\beta_i \Delta t}-\frac{\alpha_i}{\beta_i} \nabla^2 \psi^i
+	\end{equation}
+
+	Solving the laplacian we obtain $\psi(n+1)$.
+
+\end{enumerate}
+
+\item Compute RHS of $\Omega_y$ and $\phi$ \\
+Once $\vec{N}$ and $\vec{M}$ are known, it is immediate to compute RHS, the only operation appart to be done is the derivative with respect to $y$.
+		\begin{equation}
+			\begin{array}{lcl}
+				RHS(\Omega_y)=i k_z {N_x} - i k_x {N_z} + \frac{1}{Re} \left(  i k_z{M_x}-i k_x{M_z} \right)\\
+				RHS(\phi)=-(k_x^2+k_z^2)\left( N_y+\frac{M_y}{Re} \right)-
+					\ppy{} \left( i k_x \left( N_x+\frac{M_x}{Re} \right)+ i k_z \left( N_z+\frac{M_z}{Re} \right) \right)
+			\end{array}
+		\end{equation}
+
+Similarly, the RHS of the 00 modes evolving equations:
+		\begin{equation}
+			\begin{array}{lcl}
+				RHS(\rho u00)=N00_x+ \frac{1}{Re} M00_x\\
+				RHS(\rho w00)= N00_z+\frac{1}{Re} M00_z
+			\end{array}
+		\end{equation}
+
+It is important to keep in mind that the all the RHS of this substep will be needed in the next substep in order to use the RK scheme, in order to do that we will send this trough buffers not used at the first stages of the substeps, and then, once the input variables has been saved in new buffers we transform these into something like:
+
+\begin{equation}
+		u_i^{**}=u_i+\Delta t \xi_i RHS(u)_{i-1}
+\end{equation}
+
+
+\item Evolving equations ($\phi$, $\Omega_y$ and $\rho u00$, $\rho w00$)
+		\begin{equation}
+			\begin{array}{lcl}
+			\phi^{i+1}&=&\phi^{i}+\Delta t \gamma_i RHS(\phi,i)+\Delta t \xi_i RHS(\phi,i-1) \\
+			\Omega_y^{i+1}&=&\Omega_y^{i}+\Delta t \gamma_i RHS(\Omega_y,i)+\Delta t \xi_i RHS(\Omega_y,i-1)\\
+			\rho u00^{i+1}&=&\rho u00^{i}+\Delta t \gamma_i RHS(\rho u00 ,i)+\Delta t \xi_i RHS(\rho u00,i-1) \\
+			\rho w00^{i+1}&=&\rho w00^{i}+\Delta t \gamma_i RHS(\rho w00 ,i)+\Delta t \xi_i RHS(\rho w00,i-1) \\
+			\end{array}
+		\end{equation}
+
+\end{enumerate}
+
+
+
+
+
+\newpage
+\includegraphics[scale=0.24,angle=90]{LOMA_DIA.pdf}
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

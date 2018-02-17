@@ -1,0 +1,37 @@
+
+!**********************************************************************!
+!     Parameters file for *.f functions in initloma                    !
+!                                                                      !
+!**********************************************************************!
+!      
+      integer numerop,numerosa
+      parameter(numerop = 1)
+      parameter(numerosa = 1)
+      
+!     MESH PARAMETERS
+      integer mgalx,mgalz,my
+      parameter(mgalx   = 1152) !1536  ) !192 RM  )!mlpantano06 768!
+      parameter(mgalz   = 288 )!576  )! RM )!mlpantano 06 288!
+      parameter(my      = 801) !453 ) !1251 ) !1651 ) !!735 ) !1537 )!1025)  
+
+!     BOX SIZE
+!      real(4) :: Ly
+!      parameter(Ly = 172/2.0)
+    
+      integer mx,mz, mgalx1,mgalz1,mx1,my1,mz1,mgx,nz,nz1,nz2,
+     &        mgalzp,myp,mzp,mgalz1p,nxymax,nlines,nplanes,mx2
+
+      parameter(mx=2*(mgalx/3))
+      parameter(nplanes=mx/2)
+      parameter(mx2 =2*(mgalx/3), mz = 2*(mgalz/3)-1)
+      parameter(nlines=mgalz*my) 
+      parameter(mgalx1=mgalx-1,mgalz1=mgalz-1)
+      parameter(mx1=mx/2-1 ,my1=my-1, mz1=mz-1)
+      parameter(mgx=mgalx/2)
+      parameter(nz=(mz-1)/2,nz1=nz,nz2=mgalz-nz)
+      parameter(mgalzp=mgalz+1,myp=my+1)
+      parameter(mzp = mz+1,mgalz1p=mgalzp-1)
+
+!     Other data
+      real(4) :: pi
+      parameter(pi = 3.14159265359)

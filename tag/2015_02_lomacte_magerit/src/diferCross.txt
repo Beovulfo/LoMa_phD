@@ -1,0 +1,64 @@
+74,80c74,87
+< !!RK Spalart-Lucky Toni (alpha=xi, beta= gamma)
+<       real(8)  :: gama(3), alpha(3), beta(3), ibeta(3), xi(3)
+<       parameter (gama= (/ 8d0/15d0,   5d0/12d0,   3d0/4d0 /))
+<       parameter (alpha=(/      0d0, -17d0/60d0, -5d0/12d0 /))!aaf
+<       parameter (beta =(/ 8d0/15d0,   5d0/12d0,   3d0/4d0 /))!aaf
+<       parameter (ibeta=(/ 15d0/8d0,   12d0/5d0,   4d0/3d0 /))!aaf
+<       parameter (xi   =(/      0d0, -17d0/60d0, -5d0/12d0 /)) !aaf 
+---
+> !!!RK Spalart-Lucky Toni (alpha=xi, beta= gamma)
+> !      real(8)  :: gama(3), alpha(3), beta(3), ibeta(3), xi(3)
+> !      parameter (gama= (/ 8d0/15d0,   5d0/12d0,   3d0/4d0 /))
+> !      parameter (alpha=(/      0d0, -17d0/60d0, -5d0/12d0 /))!aaf
+> !      parameter (beta =(/ 8d0/15d0,   5d0/12d0,   3d0/4d0 /))!aaf
+> !      parameter (ibeta=(/ 15d0/8d0,   12d0/5d0,   4d0/3d0 /))!aaf
+> !      parameter (xi   =(/      0d0, -17d0/60d0, -5d0/12d0 /)) !aaf 
+> 
+> !RK3LS opt parameters
+>        real(8)  :: gama(3), alpha(3), beta(3), ibeta(3), xi(3)
+>        parameter (gama= (/ 8d0/15d0,   5d0/12d0,   3d0/4d0 /))
+>        parameter (xi   =(/      0d0, -17d0/60d0, -5d0/12d0 /)) !aaf 
+>        parameter (alpha=(/0.10d0,-0.1466666667d0,3.47435897436d0/))
+>        parameter (beta =(/0.43333333d0, 0.28d0 ,-3.14102564103d0/))
+931d937
+<               !cumtrapz calculates the integral part of last formula
+933c939,941
+<                   drho00(j) = real(drho(j,0,1))/(dtgamma+dtxi)
+---
+>               !    drho00(j) = real(drho(j,0,1))/(dtgamma+dtxi)
+>                   drho00(j) =-real(drho(j,0,1))/dtbeta
+>      .                   -alpha(rkstep)/beta(rkstep)*drho00(j)
+959c967,968
+<                 v00wk(j)=-rf0v(j) !Euler Implicit
+---
+>                 v00wk(j)=rf0v(j) !RK3LS
+>                 !v00wk(j)=-rf0v(j) !Euler Implicit
+969c978,980
+<                   psi(j,k,i)=-drho(j,k,i)/(dtgamma+dtxi)!Euler Implicit
+---
+>                   !psi(j,k,i)=-drho(j,k,i)/(dtgamma+dtxi)!Euler Implicit
+> 
+>                   nywk(j,k,i)=-drho(j,k,i)/dtbeta 
+980c991,992
+<                call Lapvdvhom(psi(0,k,i),psi(0,k,i),ten23(0,k,i),rK)
+---
+>                !call Lapvdvhom(psi(0,k,i),psi(0,k,i),ten23(0,k,i),rK)
+>                call Lapvdvhom(nywk(0,k,i),nywk(0,k,i),ten23(0,k,i),rK)
+982a995,1006
+>         !Update PSI
+>           do i=pb,pe
+>              do k=0,mz1
+>                do j=0,my1
+>                   psi(j,k,i)=nywk(j,k,i)-
+>      .                  alpha(rkstep)/beta(rkstep)*psi(j,k,i)
+>                enddo
+>              enddo
+>           enddo 
+> 
+> 
+> 
+1929a1954
+> c     ---- rhou(9),rhov(10),rhow(11),T(12)
+2024a2050
+> c     --u(1),v(2),w(3),uv_re(4),uv_im(5),o1(6),o2(7),o3(8)

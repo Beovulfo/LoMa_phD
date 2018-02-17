@@ -1,0 +1,4 @@
+Version 666
+working with Explicit scheme (mixing_exp) and Implicit scheme (mixing)
+not changing with CFL and converging between both schemes perfectly.
+

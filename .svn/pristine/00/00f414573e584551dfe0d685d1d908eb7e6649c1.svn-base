@@ -1,0 +1,97 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.03653    0.07306     0.
+CC Pantano reactive case B
+CC       160       0.04601      0.189285   0.0
+CC  Test for S10LF10
+      5000       1.0     1.0   0.0
+CC       200       0.04601      0.189285   0.0
+CC       160       0.04601      0.189285   0.0
+CC  domain Magerit
+CC       160       0.01365    0.0365     0.
+CC--------------------------------------------
+CC combustion Parameters & others
+CC sigma   Pr     Zs(Stioch.)  Lf(LewisFuel)  gamma   beta     T0f
+   0.7     0.7       0.1         1.0          4.0      50      1.0
+CC
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+    2001       500      50           
+CC  6001       1000     100            
+CC     601      300     10
+CC Every nhist steps write STATS file
+CC
+CC
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+   0.25     10
+CC      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # accumulation steps
+CC output    0 no stts     for
+CC file      1 do stats   statistics 
+CC number #               calculations 
+CC                         ntimes (ntimes<=nhist)
+CC       *         *        *        *
+CC   28      1            5
+    1       1      10
+CC    1       1      5
+CC
+CC
+CC Scalar diffusion coefficients "scaldiff" variable
+CC   0.002
+CC 0.002=1/500, Peclet=500;
+CC   0.0063
+CC
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/share/drive/toni/reactml/S10LF10/test
+CC/share/drive/toni/lomahz/pantanoB/3Dmy453
+CC/data2/toni/turb/test
+CC/data2/toni/turb/s40muT_vBCmy756
+CC  input file max 70 char22
+CC Using new input file (fortran program: initloma)
+CC/data2/toni/turb/Re160s40my1101e.007
+CC/data2/toni/turb/Re160s20my1101d.003
+CC/data2/toni/turb/s40my756_muT.001
+/share/drive/toni/reactml/S10LF10/IC.dat
+CC/share/drive/toni/lomahz/pantanoB/IC.dat
+CC/share/drive/toni/lomahz/pantanoB/3D.002
+CC/home/toni/SVNlast/branches/initloma/data/s40my756.dat  
+CC/home/toni/SVNlast/branches/initloma/data/s100my756.dat  
+CC/data2/toni/turb/s100my756_muT.006
+CC/home/toni/SVNlast/branches/initloma/data/s40my1101.dat
+CC
+CC
+CC  statistics file name max 70 char.
+CC/data2/toni/turb/test_01
+/share/drive/toni/reactml/S10LF10/test_01
+CC/share/drive/toni/lomahz/pantanoB/3Dmy453_01
+CC/share/drive/toni/lomahz/test0/kk_01
+CC/data2/toni/turb/s40muT_vBCmy756_01
+CC/data2/toni/turb/s100my756_muT_01
+CC/data2/toni/turb/s40my756_muT_02
+CC
+CC

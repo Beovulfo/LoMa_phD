@@ -1,0 +1,1 @@
+ffmpeg -framerate 5 -i %03d.png -c:v libx264 -qscale:v 1 -pix_fmt yuv420p mymovie.mp4

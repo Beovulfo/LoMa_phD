@@ -1,0 +1,56 @@
+def create_filenames(varname,nsteps,rksteps=3):
+	""" filenames  = create_filenames(varname,nsteps,*rksteps) 
+	    list       = create_filenames(str, int)
+	    returns a list of filenames live varname.+001001,001002,...,nsteps/003
+	Ex:
+	print create_filenames("v00.", 2,0)
+        >>> ['v00.001','v00.002']	
+	"""
+	filenames=[]
+	for istep in range(nsteps):
+		if rksteps != 0:
+    			for rkstep in range(rksteps):
+        			filename=  varname +'%03d' % (istep+1) + '%03d' % (rkstep+1)
+				filenames.append(filename)
+		else:
+        		filename=  varname +'%03d' % (istep+1)
+			filenames.append(filename)
+	return filenames
+
+#-----------------------------------------------------------------------------------------------------#
+def readASCII(filename):
+	""" open a text file with "ncolumns"
+	 and reads data, returns a list of lists
+	 Important: data must be numbers only and same columns for all lines! 
+	[list] = readASCII([str])
+	"""
+	f1 = open(filename,'r')
+	file = f1.readlines()
+	f1.close()
+	#Take one line for info
+	ncolumns= len(file[0].split()) 
+	nlines = len(file)
+	print "Reading file of %s lines and %s columns" %(nlines,ncolumns)
+	x = [[] for i in range(ncolumns)]	
+	for line in file:
+		row = line.split()
+		for col in range(len(row)):
+			x[col].append(float(row[col]))
+	return x
+	#return np.array(x1), np.array(y1)
+			
+			
+def makeplot(x,col1=0,col2=1):
+	import pylab as pl
+	fig = pl.figure()
+	pl.plot(x[col1][:],x[col2][:],'go')
+	#fig.show()
+	pl.show()
+	print 'Continue computation'
+	
+
+
+x = readASCII('v00.002001')
+makeplot(x)
+print "I am here..."
+

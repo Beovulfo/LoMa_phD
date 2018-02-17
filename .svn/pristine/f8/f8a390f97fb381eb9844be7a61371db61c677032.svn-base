@@ -1,0 +1,195 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC Small  Pantano dm0=1
+CC       160       0.03653    0.07306     0.
+CC Pantano reactive case B
+CC       1200       0.04601      0.189285   0.0
+CC  q0 max.growth rate BOX size
+CC Re   --- alpha-----beta-----SolenoidalFLAG
+CC                          make curl if flag.eq.1
+CC PantA case
+CC    640       0.07757    0.314  1
+CC PantB case  dm0 = 1
+CC    1200      0.046009131   0.178285383   1.0
+CC SET A Re=250 (instead of 160),Lx=473,Lz=Lx/4 
+CC     250       0.0136295    0.05305   1.0
+CC SET A Re=1120 (instead of 160),Lx=132,Lz=Lx/4 
+CC      1120       0.0476    0.1903   0.0
+CC From SS solution mean profiles and dw0=1, U=1
+CC     2640       0.14612    0.5845   1.0
+CC     5280       0.20268   0.7854    1.0
+CC     5280       0.6204    0.7854    1.0
+CC     5280       0.6204      1.091     1.0
+CC Test BOX for Turbulence
+CC     5280       0.6204      1.091     1.0
+CC TEST Dx=0.02dw0(BM/H2)
+     5280       0.5445     1.089    1.0
+CC Test BOX for 2D
+CC     5280         2.0       4.0          1.0
+CC     5280       0.6204    0.7854     0.0
+CC     5280       0.6204    0.7854    1.0
+CC    5280      0.20268    0.7854  1.0
+CC     2640        0.2      0.8   0.0
+CC     1000        0.431      0.862   0.
+CC     1000       0.8621     1.4368   0.
+CC      50       1.00      1.0  0.
+CC       200       0.04601      0.189285   0.0
+CC Domain 2,3,4 (Re =160)
+CC       160      0.01365    0.0365     0.
+CC
+CC New domain for res 0.4 on x,z and 0.2 on y
+CC       160      0.020453    0.040906     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CCOLD    dm0     u0       DT (Temperature)          
+CC NOT USED             
+CC    dm0     u0       s (density ratio)(rho0=1.0)          
+CC    *       *        *
+CC----------------------------------------
+CC       1.0      1.0     1.0
+CC   nymax        nhmin           nhmax        swin 
+CC max waves y  min hor. wave   peak waves    swin*dm0
+CC      *           *               *           *
+CC nhmax such that k0 is aproximately the most unstable:k0= 1.0,nhmax = k0/alp
+CC PantB
+CC      5             4            64            1.0 
+      2               2            8           2.0 
+CC Case setA/LF1/C
+CC      5               4            12          4.0 
+CC      5               4            36          1.0 
+CC      5             4            24            4.0 
+CC PantA
+CC     1             2            30            0.25 
+CC        5           2              19          2.0 
+CC       1.0      0.5     1.0
+CC       1.0      0.5     8.0
+CC     1.0      0.5     0.666667
+CC     1.0      0.5     1.20
+CC     1.0      0.5     1.55555556
+CC
+CC  urmstarget   vrmstarget   wrmstarget
+CC          
+CC      *               *          *  
+CC      0.1             0.1        0.1
+CC      0.0             0.0        0.0
+      0.1             0.1         0.1
+CC
+CC    gam      Scomb       LF         betha
+CC      4.0       10.0        2.0         100 
+CC       3.73       4.0        1.0         50 
+CC Case PantA
+CC      0.0        1.0         1.0         20 
+CC Case PantB
+CC        4.0        4         1.0         50 
+CC Set A (S=1),gamma = 6.
+CC      6.0       1.0            1.0       100
+CC SetB
+CC      6.0        1.0            1.0       100
+CC BM - 01
+CC      4.0        4.0            1.0       100
+CC BM - 02
+CC     4.0        4.0           2.0        100
+CC BM - 03 Lf=0.3
+CC     4.0        4.0             0.3        100
+CC H2 - Real
+CC      4.0        34.5            0.3        300
+CC SetALF1
+CC      4.0          1              1        300
+CC SetALF03
+CC      4.0          1              0.3        300
+CC SetALF2
+      4.0          1              2.0        300
+CC      4.0        4.0             0.3       100
+CC      4.0       4.0            1.0       50
+CC      6.0       1.0           1.0       100
+CC       4.0        4         1.0         50 
+CC       3.73        4        1.0         50 
+CC       3.73        4          2.0         50 
+CC       6.0        1.0        1.0         500 
+CC      0.0       1.0        1.0         100 
+CC      4.0      10.0        0.3         100 
+CC Noise
+CC        5           2              48          2.0 
+CC        5           2              24          4.0 
+CC        5           2              64          4.0 
+CC        5           2               48          2.0 
+CC        10           2              48          2.0 
+CC        10           2              48          2.0 
+CC        2           2              48          2.0 
+CC        2           2              4          2.0 
+CC        10           5              36          2.0 
+CC PANTANO used as reference for input generation
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/home/toni/fields/pantBmy601.dat
+CC/home/toni/fields/pantB.dat
+CC/share/drive/toni/RML/BM/01/IC.dat
+CC/share/drive/toni/RML/BM/H2/IC.dat
+CC/share/drive/toni/RML/BM/03/IC.dat
+CC/share/drive/toni/RML/BM/setA/LF1/IC.dat
+/share/drive/toni/RML/BM/setA/LF2/IC.dat
+CC/share/drive/toni/RML/BM/2D/LF2/IC.dat
+CC/share/drive/toni/RML/BM/2D/LF03/IC.dat
+CC/share/drive/toni/RML/BM/2D/LF1/IC.dat
+CC/share/drive/toni/RML/setA/LF1/D/ICnosols4.dat
+CC/share/drive/toni/RML/setA/LF1/B/ICnosol.dat
+CC/share/drive/toni/RML/setA/LF03/IC02.dat
+CC/home/toni/fields/PantBLy176.dat
+CC/home/toni/fields/PantBLf2.dat
+CC/home/toni/fields/PantBdm0Lf2.dat
+CC/home/toni/fields/PantB_Lf03.dat
+CC/share/drive/toni/reactml/PantB/ICcomet.dat
+CC/share/drive/toni/reactml/S10LF202D/IC.dat
+CC/share/drive/toni/comet/S01LF10g6/ICpantResx2.dat
+CC/share/drive/toni/reactml/S10LF102Db/IC.dat
+CC/share/drive/toni/reactml/S10LF032D/IC.dat
+CC  mesh and input profiles file max 70 char22
+CC mean profiles 
+CC/share/drive/toni/reactml/mean_S10LF20.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantBmy601.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantB.txt
+CC/home/toni/PantBdm0mesh.txt
+CC/home/toni/setA_02.txt
+CC/home/toni/setA.txt
+CC/home/toni/setA_dw1.txt
+CC/home/toni/bm_my1001.txt
+/home/toni/Ly30_my851.txt
+CC/home/toni/Ly20_my801.txt
+CC/home/toni/mean_S01LF03g6.txt
+CC/home/toni/mean_S01LF10g6.txt
+CC/share/drive/toni/APS/PantBLf03/mesh2.txt
+CC~/SVNlast/branches/initreactml/data/PantB.txt
+CC~/SVNlast/branches/initreactml/data/mesh_dy065_Ly40.txt
+CC~/SVNlast/branches/initreactml/data/mesh_dy005_Ly30_my701.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantA.txt
+CC/share/drive/toni/reactml/mean_small_S01LF10g6.txt
+CC/share/drive/toni/reactml/mean_S10LF03.txt
+CC/share/drive/toni/reactml/mean_q0.txt
+CC/share/drive/toni/reactml/mean_S10LF03.txt
+CC/share/drive/toni/reactml/mean_S10LF10.txt
+CC/share/drive/toni/reactml/mean_S10LF10.txt
+CC Pert
+CC/share/drive/toni/reactml/pert_S10LF10.txt
+CC/share/drive/toni/reactml/pert_S10LF20.txt
+CC/share/drive/toni/reactml/pert_S40LF03g65.txt
+CC/share/drive/toni/reactml/pert_S10LF03.txt
+CC/share/drive/toni/reactml/pert_q0.txt
+CC/share/drive/toni/reactml/pert_S10LF10.txt

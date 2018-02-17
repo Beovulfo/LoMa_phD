@@ -1,0 +1,26 @@
+% To do list with the code
+
+Priority/Issue
+ 
+#1 Check implementation of explicit time step scheme RK3
+
+#2- Post process -> check with Oscar, matlab functions or using the fortran code, etc..
+   ---Waiting for some codes regardings this issue
+ 
+- Improve mesh 
+  - we want a mesh accurated enough in the shear layer and in the extrems.
+  - Remesh scaling the shear layer thickness to be 1 and the y domain 4 times this thickness?
+  - One way to proceed in order to set the mesh is:
+     - run a simulation wiht a initial mesh-> obtain energy dissipation = f(y), calculate kolmogorov scale for this eps(y)
+     - mesh around 5 times this scale aprox. eps=nu (dUi/dXi)^2
+
+
+
+
+X DONE:Check carefully VISC, in order to find what causes the NaN
+   * About this it has been proved that the old code with new rk00 works with couette BC's
+     the old code with this check is located on hall9000:~/SVN_341/ 
+     + VISC had input variables as real8 instead of real4, changed and working!
+     + used /test folder in order to check rk00 and visc --> both working with couette BC's
+X DONE Running couette_poly, check if the results are coherent.
+X DONE check VISC with robin BC's for mixing layer

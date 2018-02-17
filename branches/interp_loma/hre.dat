@@ -1,0 +1,82 @@
+CC --------------------------------------------
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC     340     0.07757    0.3141592  0.0
+CC--------------------------------------------
+CC
+CC Length of the new mesh
+CC  MYE
+CC 651
+ 851
+CC 813
+CC
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 90 char.
+CC FILE OUTPUT
+CC/share/drive/toni/PantALy60/PantA.012.y2
+CC/share/drive/toni/inc_ml_bm2/IC.dathz.y2
+CC/share/drive/toni/inc_ml_bm2/loma3/s10.018.y3
+CC/share/drive/toni/Re160s40/case2/sig07/s40b.049.y2
+CC/share/drive/toni/Re160s40/case3/y2/s40c.005.y2
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.153b
+CC/share/drive/toni/Re160s80/case1/rv/IC.y2
+/share/drive/toni/VDML/s10/01/s10a.006.y2
+CC/share/drive/toni/VDML/s80/test/03/Pantano.050
+CC/share/drive/toni/VDML/s80/test/05/tanhLy250.028
+CC/share/drive/toni/Re160s80/case1/y2/my751.007
+CC/share/drive/toni/Re160s20/case2/s20b.005.y2
+CC/share/drive/toni/Re160s20/case3/s20c.005.y2
+CC/share/drive/toni/Re160s20/case2/s20b.005.y2
+CC/share/drive/toni/Re160s20/case1/s20a.005.y2
+CC/share/drive/toni/Re160s40/case2/y2/s40b.005.y2
+CC/share/drive/toni/Re160s40/case1/y2/s40a.005.y2
+CC/share/drive/toni/Re160s80/case3/y2/s80c.007.y2
+CC/share/drive/toni/Re160s80/case2/y2/s80b.007.y2
+CC/share/drive/toni/Re160s80/case1/y2/s80a.007.y2
+CC/share/drive/toni/Re160s40/case3/sig07/s40c.049.y2
+CC FILE INPUT
+CC/share/drive/toni/Re160s40/case3/s40c.005
+CC/share/drive/toni/Re160s40/case2/s40b.005
+CC/home/toni/fields/s80a.119
+CC/share/drive/toni/Re160s80/case1/s80a.007
+CC/share/drive/toni/VDML/s80/test/05/sinmesh.028
+CC/share/drive/toni/VDML/s80/test/05/sinmesh.018
+/share/drive/toni/VDML/s10/01/s10a.006
+CC/share/drive/toni/VDML/s80/test/02/Pantano.030
+CC/share/drive/toni/Re160s80/case3/IC.dat
+CC/share/drive/toni/Re160s20/case2/s20b.005
+CC/share/drive/toni/Re160s20/case3/s20c.005
+CC/share/drive/toni/Re160s20/case2/s20b.005
+CC/share/drive/toni/Re160s20/case1/s20a.005
+CC/share/drive/toni/Re160s80/case3/s80c.007
+CC/share/drive/toni/Re160s40/case2/sig07/s40b.049
+CC/share/drive/toni/Re160s40/case3/sig07/s40c.049
+CC/share/drive/toni/Re160s40/case1/s40a.004
+CC/share/drive/toni/inc_ml_bm2/loma3/s10.018
+CC/share/drive/toni/inc_ml_bm2/IC.dathz
+CC/share/drive/toni/PantALy60/PantA.012
+CC/share/drive/toni/PantAIC/PantA.010
+CC NEW MESH y
+CC
+CC~/Ly368my1501.txt
+CC~/Ly368y2.txt
+CC/home/toni/JFM_new.txt
+/home/toni/Ly368Dy020my851.txt
+CC/home/toni/Ly368Dy025my851.txt
+CC/home/toni/highmid851.txt
+CC/home/toni/higherBs813.txt
+CC~/spline801C.txt
+CC~/tanhLy250my651.txt
+CC~/Ly300s80B.txt
+CC~/Ly368my1101.txt
+CC~/Ly343my1201.txt
+CC~/SVNlast/branches/interp_reactml/data/mesh_dy05_Ly45_my781.txt

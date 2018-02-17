@@ -1,0 +1,64 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC      
+       500       0.8621      1.4368          0.
+CC       10000       1        2.           0.
+CC    48500      0.25     0.666666666            0.53
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+    3001       50     50            
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+CC CFL must be 1 always (aalmagro)
+CC   1.0     10
+    1.0      10
+CC    1.      10
+CC
+CC first     0/1          # steps
+CC output    0 no stts     between 
+CC file      1 do stats   statistics 
+CC number #                calculations
+CC       *         *        *        *
+    1      1             50
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/data/toni/mixing/mlIMPdir
+CC/data/toni/mixing/mlayery5
+CC/home/toni/Documents/tesis/DATA/Re10000
+CC/gpfs/scratch/upm17/upm17118/2000/chan2000
+CC
+CC
+CC  input file max 70 char22
+CC/home/toni/Documents/tesis/lowmach/liso_tools/finp.dat
+CC/data/toni/fullturb/fullturb1.002
+CC/data/toni/mixing/turbInitiatior.099
+CC/data/toni/mixing/mlIMPCFL05.040
+/home/toni/SVN/LowMach/branches/mixing/data/finp.dat
+CC /gpfs/scratch/upm17/upm17118/2000/chan2000.782
+CC
+CC
+CC  statistics file name max 70 char.
+/data/toni/mixing/mlIMPdir_01
+CC/data/toni/mixing/mlIMPCFL1_01
+CC/data/toni/mixing/mlayery5_01
+CC/home/toni/Documents/tesis/DATA/Re10000_01
+CC/gpfs/projects/upm17/upm17118/2000/espectros/chan2000_062
+CC
+CC

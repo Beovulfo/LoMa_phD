@@ -1,0 +1,86 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       320       0.0182    0.0731     0.
+CC  R&M Kelvin
+       500       0.8621     1.4368          0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+CC     2       1     1            
+   4001       100     100            
+CC     6001     200    200            
+CC     201    10   10
+CC     11     10      10            
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+CC CFL must be 1 always (aalmagro)
+    0.5      10
+CC      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # steps
+CC output    0 no stts     between 
+CC file      1 do stats   statistics 
+CC number #                calculations
+CC       *         *        *        *
+   1      1            100
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/data/toni/mixing/mlpantano01
+CC/data/toni/mixing/mltest
+CC/data/toni/mixing/mlpantano12 my=513,not cos(y) yet
+CC/data/toni/mixing/mlpantano06
+CC/data/toni/mixing/mlRM64
+/data2/toni/mlRM01
+CC/data2/toni/RMml01
+CC/data/toni/mixing/ml09turb
+CC/data/toni/mixing/ml04turb
+CC/data/toni/mixing/ml04turb
+CC/data/toni/mixing/ml01loroll
+CC/data/toni/mixing/ml02hiroll
+CC/home/toni/Documents/tesis/DATA/Re10000
+CC/gpfs/scratch/upm17/upm17118/2000/chan2000
+CC
+CC
+CC  input file max 70 char22
+/home/toni/SVN/LowMach/branches/scalar_test/data/finp.dat
+CC/home/toni/SVN/LowMach/branches/mixing_exp/data/finp.dat
+CC/data/toni/mixing/mlpantano09y2.060
+CC/home/toni/SVN/LowMach/branches/mixing_exp/data/finpmlpantano09.dat
+CC/data/toni/mixing/mlpantano10.008
+CC/home/toni/SVN/LowMach/branches/mixing_exp/data/finp.dat
+CC/data/toni/mixing/ml02hiroll.020
+CC/home/toni/Documents/tesis/lowmach/liso_tools/finp.dat
+CC/data/toni/fullturb/fullturb1.002
+CC  statistics file name max 70 char.
+CC/data/toni/mixing/mlRM32_01
+CC/data/toni/mixing/mlpantano04_01
+CC/data/toni/mixing/mlpantano02_01
+/data2/toni/mlRM01_01
+CC/data2/toni/RMml01_01
+CC Gaussian filter width increased to 2.9, mgalz=288
+CC/data/toni/mixing/ml09turb_01
+CC
+CC

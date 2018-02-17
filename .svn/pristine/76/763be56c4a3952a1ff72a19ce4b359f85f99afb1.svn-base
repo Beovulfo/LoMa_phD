@@ -1,0 +1,88 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       320       0.0182    0.0731     0.
+CC  R&M Kelvin
+       500       0.8621     1.4368          0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+CC     2       1     1            
+CC    4001       10     10            
+CC     11     1    1         
+    501    500   10
+CC     1001    10   10
+CC      501    20   20
+CC     11     10      10            
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+CC CFL must be 1 always (aalmagro)
+   0.2     10
+CC      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # steps
+CC output    0 no stts     between 
+CC file      1 do stats   statistics 
+CC number #                calculations
+CC       *         *        *        *
+   1      1            10
+CC
+CC
+CC Scalar diffusion coefficients "scaldiff" variable
+CC   0.002
+CC 0.002=1/500, Peclet=500;
+CC   0.0063
+CC
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/data2/toni/loma2inc
+CC/data2/toni/BCtest03
+CC/data2/toni/testcomp05
+CC/data2/toni/testcomp03lapvdv
+CC/data2/toni/testcomp01RK2
+CC/data2/toni/testcomp01RK2
+CC/data2/toni/comp03
+CC
+CC  input file max 70 char22
+CC/home/toni/SVNlast/branches/loma_transition2/data/finp.dat
+/home/toni/SVNlast/branches/loma_transition/data/finpinc513.dat
+CC
+CC
+CC  statistics file name max 70 char.
+/data2/toni/loma2inc_01
+CC/data2/toni/BCtest03_01
+CC/data2/toni/testcomp05_01
+CC/data2/toni/testcomp03lapvdv_01
+CC/data2/toni/testcomp01RK2_01
+CC/data2/toni/comp03_01
+CC
+CC input file for scalar field max 70 char
+CC Right now it will take only finpsca001.dat
+CC/home/toni/SVNlast/branches/loma_transition2/data/finpsca
+/home/toni/SVNlast/branches/loma_transition/data/finpsca
+CC/home/toni/SVNlast/branches/loma_transition/data/testcomp01RK2100sca
+CC/home/toni/SVN/LowMach/branches/loma_transition/data/finpscaINC
+CC
+CC

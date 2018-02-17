@@ -1,0 +1,14 @@
+CC Re	alpha0	beta0	a0
+160.0	0.020466	0.04096	0.0
+CC nsteps	nimag	nhist
+901	300	100
+CC CFL	ncfl
+0.25	10
+CC iout	stats	nacum
+28	1	10
+CC fileout
+/share/drive/toni/coefT/Re160s80/case3/s80c
+CC filein
+/share/drive/toni/coefT/Re160s80/case3/s80c.027
+CC filestats
+/share/drive/toni/coefT/Re160s80/case3/s80c_10

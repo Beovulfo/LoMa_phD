@@ -1,0 +1,32 @@
+      integer mgalx,mgalz,my
+      integer mx,mz
+      integer mgalx1,mgalz1 
+      integer mx1,my1,mz1
+      integer mgx,mbz,mbx,mbx1
+      integer nz,nz1,nz2
+      integer maxmemory
+      integer nplany,planlist
+      integer iwd
+      integer ispec1,ispec2
+
+      parameter(mgalx = 1536 ) ! !  1024*3) !     768) !  ! 
+      parameter(mgalz = 576 ) ! !  768*3)  !     512) !  ! 
+      parameter(my    = 851)! 453 ) !1101) !513 )!!251)! !  383)    !      97) !  ! 
+
+      parameter(maxmemory = 131072000) ! 500 MB
+
+      parameter(mx =2*(mgalx/3), mz = 2*(mgalz/3)-1)
+      parameter(mgalx1=mgalx-1,mgalz1=mgalz-1)
+      parameter(mx1=mx/2-1 ,my1=my-1, mz1=mz-1)
+      parameter(mgx=mgalx/2)
+      parameter(nz=(mz-1)/2,nz1=nz,nz2=mgalz-nz)
+      parameter(mbx=2*mx,mbx1=mbx-1,mbz=2*(mz+1))
+
+!     ----------------------------------------------------------------!
+
+      integer nspec
+      parameter(nspec=1)
+      integer  jspecy(nspec)
+      parameter(ispec1=426,ispec2=426)
+! ispec12 are the first and last index to compute for vertical direc.
+! on planes xz

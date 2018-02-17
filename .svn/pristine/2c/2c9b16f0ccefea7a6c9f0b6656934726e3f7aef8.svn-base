@@ -1,0 +1,10 @@
+./pln2vtk << EOF
+'/share/drive/toni/reactml/q02D/Re1000' # BaseName
+$1        #'upyx' varible and plane
+1               # Start Step 
+10              # End Step
+1                # Stride
+EOF
+
+##'/share/drive/toni/reactml/q02D/Re1000' # BaseName
+##'/share/drive/toni/reactml/S10LF032D/Re1000' # BaseName

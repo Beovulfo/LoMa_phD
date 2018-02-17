@@ -1,0 +1,17 @@
+#!/bin/sh
+#PBS -lwalltime=30:05:00
+#PBS -lnodes=6
+####PBS -q oldnodes
+#PBS -N testicaro1
+#PBS -k oe
+#PBS -j oe
+# Parameters:
+#  
+WKD=/home/toni/SVNlast/branches/mixing_exp/
+cd $WKD
+echo "WKD is..."
+echo $WKD
+echo "Calling mpirun for loMa"
+mpirun -np 6 /home/toni/SVNlast/branches/mixing_exp/loma
+
+echo "LoMa finished"

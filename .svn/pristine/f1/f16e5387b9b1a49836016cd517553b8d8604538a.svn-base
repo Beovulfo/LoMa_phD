@@ -1,0 +1,259 @@
+from scipy import *
+from scipy.integrate import cumtrapz
+from math  import *
+from pylab import *
+from numpy import *
+
+
+def der1(y,u):
+	result = diff(u)/diff(y)
+	return append(result[0],result)
+
+def der2(y,u):
+        return der1(y,der1(y,u))
+
+def integ(y,u):
+        result = cumtrapz(u,y)
+	return append(result,result[-1])
+
+def geninit(my,L,deltaT,option=None):
+	""" Generate from my and DTemperature the initial arrays
+		(y,ru00,rv00,t00) = geninit(my,L,deltaT,option=None)
+	"""
+	y = linspace(-L,L,my)
+	u00 = zeros(my)
+	T00 = zeros(my) 
+	rhou00 = zeros(my)
+	rhov00 = zeros(my)
+	for j in range(my):
+		u00[j] = erf(pi**0.5*y[j])
+		T00[j] = 1.+deltaT*erf(pi**0.5*y[j])
+		rhou00[j] = 1./T00[j]*u00[j]
+	return y,rhou00,rhov00,T00
+
+def dtvisc(y,re):
+	""" Estiamtes Dtvisc and Dtconv for umax=1
+	"""
+	#Estimate Dt
+	Dtvisc = re/2.*(diff(y)[0])**2
+	Dtconv = diff(y)[0]/1.0
+	return Dtvisc, Dtconv
+
+def calcdm(y,rhou00):
+	integ1 = trapz(rhou00**2,y)/(rhou00[-1]-rhou00[0])**2
+	return 0.25*(y[-1]-y[0])-integ1	
+
+
+def RK3evolve(my,Dt,nstep,deltaT,RKopt, time0=None, y=[], ru00=[], rv00=[], t00=[]):
+	""" This functions evolve rhou00,T00 and updates rhov00 using drho,
+	    reproduces 00 mode evolution of loma
+		(time,y,rhou00,rhov00,T00,timev,dmv) = evolve(my,Dt,nstep,deltaT,RKopt,time0,y,ru00,rv00,t00)
+		#------------nstep and Dt---------------------#
+		nstep  =1000
+		Dt = 0.0002
+		#--------------Geometry-----------------------#
+		my = 513*2
+		#Others...
+		deltaT = 0.1
+	"""
+	#RKNEW
+	if RKopt == 1: #RK order 2
+                alpha = [1./5. ,   0.4,  1./6.  ]
+                beta  = [-0.1  , 1./2.,  1./6.  ]
+                gamma = [1./10.,    5.,  3./4.  ]
+                xi    = [0.0   ,  -4.1, -0.4167 ]
+                ibeta = [-10.  ,    2.,  6.0    ]
+		print alpha,beta,gamma,xi,ibeta
+
+	elif RKopt == 2:
+		alpha = [4./15.,    1./15.,  1./6.    ]
+		beta  = [4./15.,    1./15.,  1./6.    ]
+		gamma = [8./15.,    5./12.,  3./4.    ]
+		xi    = [0.0   ,-17.0/60.0,  -5.0/12.0]
+		ibeta = [15./4.,       15.,  6.0      ]
+		print alpha,beta,gamma,xi,ibeta
+		
+	else:
+		#NOTE THAT RKopt==3 gives EXPLICIT RK3
+		#RKspalart
+		gamma = [8./15,      5./12.,  3./4.    ]
+		xi    = [0.0  ,   -17./60.0,  -5.0/12.0]
+		alpha = [29./96.,   -3./40., 1./6.   ]
+		beta  = [37./160.,   5./24.,  1./6.    ]
+		ibeta = [160./37.,  24./5.0,  6.0      ]
+		print alpha,beta,gamma,xi,ibeta
+	
+	#------------Physics -------------------------#
+	ire = 1./500. #inverse of Reynolds
+	ipe = 1./500. #inverse of Peclet
+	L = 10.
+	#---------------------------------------------#
+	#Initialization of variables (arrays)
+	time=0.0
+	dm=zeros(nstep)
+	timev = zeros(nstep)
+	T00last = zeros(my) 
+	if time0 is None:
+		(y,rhou00,rhov00,T00) = geninit(my,L,deltaT)
+	else: #restarting
+		print "Restarting from previous run..."
+		rhou00 = ru00
+		rhov00 = rv00
+		T00    = t00
+		time   = time0
+
+	#Start RHS
+	rhs1=zeros([my,3]) #RHS rhou00
+	rhs4=zeros([my,3]) #RHS T00
+	#Start istep 
+	for istep in range(nstep):
+		for rkstep in range(3):
+		#For each rkstep
+			rhs1[:,rkstep] = ire * der2(y,rhou00)
+			rhs4[:,rkstep] = -rhov00*T00*der1(y,T00) + ipe * der2(y,T00)   
+	                dtxi = Dt* xi[rkstep]
+			dtgamma = Dt* gamma[rkstep]
+			dtbeta = Dt* beta[rkstep]
+			#Explicit Evolution:
+			if rkstep == 0: #First rkstep
+				rhou00  = rhou00 + dtgamma*rhs1[:,rkstep] 
+				T00last = T00
+				T00     = T00 + dtgamma*rhs4[:,rkstep] 
+			else:
+				rhou00  = rhou00 + dtgamma*rhs1[:,rkstep] + dtxi*rhs1[:,rkstep-1]
+				T00last = T00
+				T00     = T00 + dtgamma*rhs4[:,rkstep] + dtxi*rhs4[:,rkstep-1]
+			drho = 1.0/T00-1.0/T00last
+	                drho = integ(y,drho) #integrates drho
+			if RKopt == 3:
+				print "using explicit coefficients only..."
+				rhov00 = -xi[rkstep]/gamma[rkstep]*rhov00-drho/dtgamma
+			
+			else :
+				rhov00 = -alpha[rkstep]/beta[rkstep]*rhov00-drho/dtbeta
+			print "istep = %s, rkstep = %s" % (istep, rkstep)
+			#end of rkstep loop
+		#istep loop
+		time += Dt
+		dm[istep]=calcdm(y,rhou00*T00)
+		timev[istep]=time
+		print "time = %s, dm = %s " % (timev[istep],dm[istep])
+	return time, y, rhou00,rhov00, T00,timev,dm
+	#return time, y, rhou00,rhov00, T00
+		
+		
+		#=======================END OF evolve function ==================================#
+def RKCNevolve(my,Dt,nstep,deltaT,RKopt, time0=None, y=[], ru00=[], rv00=[], t00=[]):
+	""" This functions evolve rhou00,T00 and updates rhov00 using drho,
+	    reproduces 00 mode evolution of loma
+		(time,y,rhou00,rhov00,T00) = evolve(my,Dt,nstep,deltaT,RKopt,time0,y,ru00,rv00,t00)
+		#------------nstep and Dt---------------------#
+		nstep  =1000
+		Dt = 0.0002
+		#--------------Geometry-----------------------#
+		my = 513*2
+		#Others...
+		deltaT = 0.1
+	"""
+	aa = 0.5
+	bb = 0.5
+	#RKNEW
+	if RKopt == 1: #RK order 2
+                alpha = [1./5. ,   0.4,  1./6.  ]
+                beta  = [-0.1  , 1./2.,  1./6.  ]
+                gamma = [1./10.,    5.,  3./4.  ]
+                xi    = [0.0   ,  -4.1, -0.4167 ]
+                ibeta = [-10.  ,    2.,  6.0    ]
+		print alpha,beta,gamma,xi,ibeta
+
+	elif RKopt == 2:
+		alpha = [4./15.,    1./15.,  1./6.    ]
+		beta  = [4./15.,    1./15.,  1./6.    ]
+		gamma = [8./15.,    5./12.,  3./4.    ]
+		xi    = [0.0   ,-17.0/60.0,  -5.0/12.0]
+		ibeta = [15./4.,       15.,  6.0      ]
+		print alpha,beta,gamma,xi,ibeta
+		
+	else:
+	#RKspalart
+		gamma = [8./15,      5./12.,  3./4.    ]
+		xi    = [0.0  ,   -17./60.0,  -5.0/12.0]
+		alpha = [29./96.,   -3./40., 1./6.   ]
+		beta  = [37./160.,   5./24.,  1./6.    ]
+		ibeta = [160./37.,  24./5.0,  6.0      ]
+		print alpha,beta,gamma,xi,ibeta
+	
+	#------------Physics -------------------------#
+	ire = 1./500. #inverse of Reynolds
+	ipe = 1./500. #inverse of Peclet
+	L = 10.
+	#---------------------------------------------#
+	#Initialization of variables (arrays)
+	time=0.0
+	T00last = zeros(my) 
+	if time0 is None:
+		(y,rhou00,rhov00,T00) = geninit(my,L,deltaT)
+	else: #restarting
+		print "Restarting from previous run..."
+		rhou00 = ru00
+		rhov00 = rv00
+		T00    = t00
+		time   = time0
+	#Start RHS
+	rhs1=zeros([my,3]) #RHS rhou00
+	rhs4=zeros([my,3]) #RHS T00
+	#Start istep 
+	for istep in range(nstep):
+		for rkstep in range(3):
+		#For each rkstep
+			rhs1[:,rkstep] = ire * der2(y,rhou00)
+			rhs4[:,rkstep] = -rhov00*T00*der1(y,T00) + ipe * der2(y,T00)   
+	                dtxi = Dt* xi[rkstep]
+			dtgamma = Dt* gamma[rkstep]
+			dtbeta = Dt* beta[rkstep]
+			#Explicit Evolution:
+			if istep == 0: #First istep
+				rhou00  = rhou00 + dtgamma*rhs1[:,rkstep] 
+				T00last = T00
+				T00     = T00 + dtgamma*rhs4[:,rkstep] 
+			else:
+				rhou00  = rhou00 + dtgamma*rhs1[:,rkstep] + dtxi*rhs1[:,rkstep-1]
+				T00     = T00 + dtgamma*rhs4[:,rkstep] + dtxi*rhs4[:,rkstep-1]
+			print "istep = %s, rkstep = %s" % (istep, rkstep)
+		#Out of RKstep loop
+		drho = 1.0/T00-1.0/T00last
+	        drho = integ(y,drho) #integrates drho
+		rhov00 = -xi[rkstep]/gamma[rkstep]*rhov00-drho/dtgamma
+			#rhov00 = -alpha[rkstep]/beta[rkstep]*rhov00-drho/dtbeta
+			#end of rkstep loop
+		#istep loop
+		time += Dt
+		print "time = %s, dm = %s " % (time,calcdm(y,rhou00*T00))
+	return time, y, rhou00,rhov00, T00
+	
+
+
+
+#my = 1026
+#Dt= 0.003
+#nstep = 50
+#RKopt = 0
+#deltaT=0.1
+#
+#[y,ru00,rv00,t00] = evolve (my,Dt,nstep,deltaT,RKopt)
+#
+#fig1=figure()
+#ax1 = fig1.add_subplot(111)
+#ax1.plot(y,ru00,'ro')
+#
+#fig2=figure()
+#ax2 = fig2.add_subplot(111)
+#ax2.plot(y,t00,'b-')
+#
+#fig3=figure()
+#ax3 = fig3.add_subplot(111)
+#ax3.plot(y,rv00,'g-')
+#
+#show()
+
+

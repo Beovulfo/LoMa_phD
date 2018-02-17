@@ -1,0 +1,55 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+       160       0.0182    0.0731     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CC    dm0     u0       DT (Temperature)          
+CC    *       *        *
+CC----------------------------------------
+     1.0      0.5     0.0
+CC
+CC  urmstarget   vrmstarget   wrmstarget
+CC          
+CC      *               *          *  
+CC      0.0             0.0         0.0
+      0.1             0.1         0.1
+CC sigmau,v,w not used
+CC
+CC   nymax        nhmin           nhmax        swin 
+CC max waves y  min hor. wave   peak waves    swin*dm0
+CC      *           *               *           *
+        2           2              48          2.0 
+CC PANTANO used as reference for input generation
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax1601D.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax150.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax125.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax105.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax100.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax175.dat
+/home/toni/SVNlast/branches/initloma/data/finpinc.dat
+CC/data2/toni/turb/3Dinc01
+CC  mesh input file max 70 char22
+/home/toni/SVNlast/branches/initloma/data/mesh.txt
+CC
+CC  statistics file name max 70 char.
+dummy.dat
+CC

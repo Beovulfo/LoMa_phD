@@ -1,0 +1,55 @@
+function pintasurface(lee,path,num,var,uref)
+%opengl software
+if lee==1
+  %filename = 'turb/3DincRe160_045.upxz'; 
+   filename = [path,num2str(num,'%03d'),'.',var]
+  [time,x,y,z,posy,u]=readfieldxz(filename);
+  dm0 = 1  
+  x = x/dm0;
+  y = y/dm0;
+  z = z/dm0;
+  posy = posy/dm0;
+
+  u=single(u); 
+  jj = find(abs(posy)<20/dm0); 
+  posy=posy(jj); 
+  u = u(jj,:,:); 
+  u = permute(u,[3 2 1]);
+  [zz,xx,yy] = ndgrid(z,x,posy); 
+  clear xx zz
+end
+
+figure(1)
+set(gcf,'visible','off')
+clf
+
+[f,v] = isosurface(x,z,posy,u,uref);
+h1 = patch('Faces',f,'Vertices',v)
+isonormals(x,z,posy,u,h1);
+isocolors(x,z,posy,yy,h1);
+set(h1,'facecolor','interp','edgecolor','none','FaceAlpha',1);
+%colormap jet
+colormap(redblue)
+%set(h1,'facecolor','interp','edgecolor','none');
+axis equal 
+axis([-172/dm0 172/dm0 -43/dm0 43/dm0 -25/dm0 25/dm0])
+caxis([-20/dm0 20/dm0]);
+
+view([0 20])
+cl1 = camlight;
+lighting gouraud
+
+set(gca,'projection','perspective');
+set(gca,'fontname','times','fontsize',16)
+set(gcf,'position',[ 194   429      1649      543])   
+set(gca,'Position',[.08 .08 .8 .9]) 
+grid on
+
+set(gcf,'visible','on')
+%figname = [num2str(num,'%03d'), var]
+%print('-dpng',figname,'-r300')
+
+
+%xlabel('x/\delta_m^0','fontname','times','fontsize',16)  
+%ylabel('y/\delta_m^0','fontname','times','fontsize',16)
+%zlabel('z/\delta_m^0','fontname','times','fontsize',16)

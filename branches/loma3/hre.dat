@@ -1,0 +1,101 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet           
+CC  Reynolds   x wave #   y wave        sigma (0.7) 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC  domain lomacte
+CC      160       0.013635    0.036361     0.
+     380      0.013635    0.036361     0.7
+CC     160      0.013635    0.036361     0.7
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+ 5001    200     100
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+ 0.50     10
+CC
+CC first     0/1          # accumulation steps
+CC output    0 no stts     for
+CC file      1 do stats   statistics 
+CC number #               calculations 
+CC                         ntimes (ntimes<=nhist)
+CC       *         *        *        *
+ 8   1    20
+CC
+CC
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC OUTPUT 
+CC/share/drive/toni/Re160s40/case1/sig07b/s40a
+/share/drive/toni/Re160s80/case1/y2/sig07/Re380
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a
+CC/share/drive/toni/Re160s80/case2/y2/sig07/s80b
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a
+CC/share/drive/toni/Re160s40/case3/y2/sig07/s40c
+CC/share/drive/toni/Re160s40/case2/y2/sig07/s40b
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a
+CC/share/drive/toni/Re160s40/case2/y2/sig07/s40b
+CC/share/drive/toni/Re160s40/case1/y2/sig07/s40a
+CC/share/drive/toni/Re160s80/case1/sig07/s80a
+CC/share/drive/toni/Re160s40/case1/sig07/s40a
+CC/share/drive/toni/Re160s40/case1/sig07/s40a
+CC INC BM
+CC/share/drive/toni/inc_ml_bm2/loma3/size2/s10
+CC/share/drive/toni/inc_ml_bm2/loma3/s10.009
+CC/share/drive/toni/inc_ml_bm2/IC.dat
+CC/share/drive/toni/inc_ml_bm2/loma3/s10.018.y2
+CC INPUT
+CC/share/drive/toni/Re160s40/case1/sig07/s40a.038
+CC/share/drive/toni/Re160s40/case2/y2/sig07/s40b.065
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.103
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.092
+CC/share/drive/toni/Re160s40/case1/y2/sig07/s40a.065
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.090
+CC
+/share/drive/toni/Re160s80/case1/y2/s80a.007.y2
+CC/share/drive/toni/Re160s80/case3/y2/sig07/s80c.039
+CC/share/drive/toni/Re160s80/case1/s80a.117b
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.153
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a.142
+CC/share/drive/toni/Re160s80/case2/y2/sig07/s80b.017
+CC/share/drive/toni/Re160s80/case1/y2/s80a.007.y2
+CC/share/drive/toni/Re160s40/case3/y2/s40c.005.y2
+CC/share/drive/toni/Re160s40/case2/y2/s40b.005.y2
+CC/share/drive/toni/Re160s40/case1/y2/s40a.005.y2
+CC/share/drive/toni/Re160s40/case1/s40a.007.y2
+CC/share/drive/toni/Re160s80/case1/s80a.003
+CC/share/drive/toni/Re160s40/case3/s40c.003
+CC/share/drive/toni/Re160s40/case1/sig07/s40a.029
+CC/share/drive/toni/inc_ml_bm2/loma3/s10.018.y3
+CC/share/drive/toni/inc_ml_bm2/loma3/size2/s10_02
+CC STATS
+CC/share/drive/toni/Re160s40/case1/sig07b/s40a_02
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a_02
+/share/drive/toni/Re160s80/case1/y2/sig07/Re380_02
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a_06
+CC/share/drive/toni/Re160s80/case2/y2/sig07/s80b_03
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a_02
+CC/share/drive/toni/Re160s40/case3/y2/sig07/s40c_02
+CC/share/drive/toni/Re160s40/case2/y2/sig07/s40b_02
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a_04
+CC/share/drive/toni/Re160s80/case1/y2/sig07/s80a_03
+CC/share/drive/toni/Re160s40/case2/y2/sig07/s40b_03
+CC/share/drive/toni/Re160s40/case1/y2/sig07/s40a_03
+CC/share/drive/toni/Re160s80/case1/sig07/s80a_02
+CC

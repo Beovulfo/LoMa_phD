@@ -1,0 +1,14 @@
+%read data
+fv11cte='/data2/toni/inc03cte_000v11.kk';
+fdv11cte='/data2/toni/inc03cte_00dv11.kk';
+fdvdv11cte='/data2/toni/inc03cte_dvdv11.kk';
+fd3v11cte='/data2/toni/inc03cte_0d3v11.kk';
+fd2v11cte='/data2/toni/inc03cte_0d2v11.kk';
+fd2dv11cte='/data2/toni/inc03cte_d2dv11.kk';
+
+[y,v11cte,v11cteimag]=leekk(fv11cte,my)
+[y,dv11cte,dv11cteimag]=leekk(fv11cte,my)
+[y,dvdv11cte,dvdv11cteimag]=leekk(fdvdv11cte,my)
+[y,d3v11cte,d3v11cteimag]=leekk(fd3v11cte,my)
+[y,d2v11cte,d2v11cteimag]=leekk(fd2v11cte,my)
+[y,d2dv11cte,d2dv11cteimag]=leekk(fd2dv11cte,my)

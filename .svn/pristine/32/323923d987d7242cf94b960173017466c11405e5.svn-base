@@ -1,0 +1,64 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       320       0.0182    0.0731     0.
+CC  R&M Kelvin
+CC       500       0.8621     1.4368          0.
+CC  Pantano 06 dm0=1
+       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+CC     5001    100   100
+CC     501    20   20
+CC   11       1     1            
+    10001     200    50            
+CC     11     10      10            
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+CC CFL must be 1 always (aalmagro)
+CC    0.5      1
+      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # steps
+CC output    0 no stts     between 
+CC file      1 do stats   statistics 
+CC number #                calculations
+CC       *         *        *        *
+   1      1            50
+CC   1      1            20
+CC   1      1            10
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/data2/toni/turb/3DINCturb
+CC/data2/toni/RKspa/mixEXP00only
+CC
+CC
+CC  input file max 70 char22
+/home/toni/SVNlast/branches/mixing_exp/data/finpINCturb.dat
+CC/home/toni/SVNlast/branches/mixing_exp/data/finp.dat
+CC
+/data2/toni/turb/3DINCturb_01
+CC
+CC
+CC

@@ -1,0 +1,123 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+       160       0.0182    0.0731     0.
+CC
+CC
+CC # steps   #step ims  #step hist     
+CC    nstep    nimag     nhist      
+CC       *         *         *                 
+CC    4001       10     10            
+     4001      500     100
+CC     601      300     10
+CC Every nhist steps write STATS file
+CC
+CC
+CC CFL     ncfl
+CC  1     #steps cfl change
+CC  *        *
+   0.25     10
+CC      0.5      10
+CC     0.5      10
+CC
+CC first     0/1          # accumulation steps
+CC output    0 no stts     for
+CC file      1 do stats   statistics 
+CC number #               calculations 
+CC                         ntimes (ntimes<=nhist)
+CC       *         *        *        *
+CC   28      1            5
+    1       1      20
+CC
+CC
+CC Scalar diffusion coefficients "scaldiff" variable
+CC   0.002
+CC 0.002=1/500, Peclet=500;
+CC   0.0063
+CC
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/data2/toni/turb/s70cfl03
+CC/data2/toni/turb/s40my1101
+/data2/toni/turb/s80my1101newRK3
+CC/data2/toni/turb/s80my1101bignewBC
+CC/data2/toni/turb/s40ywin4
+CC/data2/toni/turb/s70testcfl03
+CC/data2/toni/turb/tests80
+CC/data2/toni/turb/newmeshs40
+CC/data2/toni/turb/3DTmax125bis
+CC/data2/toni/turb/3DTmax125b
+CC/data2/toni/turb/3DTmax110
+CC/data2/toni/turb/3DTmax105b
+CC/data2/toni/turb/3DTmax100
+CC/data2/toni/turb/3DTmax150old
+CC/data2/toni/turb/3DTmax150
+CC/data2/toni/turb/3DTmax175
+CC Incompressible CFL= 0.5, for RKnew
+CC
+CC
+CC  input file max 70 char22
+CC Using new input file (fortran program: initloma)
+/home/toni/SVNlast/branches/initloma/data/s80my1101.dat
+CC/data2/toni/turb/s80my1101bignewBC.002
+CC/home/toni/SVNlast/branches/initloma/data/s80my1101big.dat
+CC/home/toni/SVNlast/branches/initloma/data/s40my1101.dat
+CC/home/toni/SVNlast/branches/initloma/data/s80my1101.dat
+CC/home/toni/SVNlast/branches/initloma/data/s40my1101_ywin8.dat
+CC/home/toni/SVNlast/branches/initloma/data/s70my1101.dat
+CC/home/toni/SVNlast/branches/initloma/data/s80my1101_test.dat
+CC/home/toni/SVNlast/branches/initloma/data/s80test.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax125_3.dat
+CC/data2/toni/turb/3DTmax125b.013
+CC/data2/toni/turb/3DTmax125b.020
+CC/home/toni/SVNlast/branches/initloma/data/rho010test.dat
+CC/home/toni/SVNlast/branches/initloma/data/rho01s70.dat 
+CC/home/toni/SVNlast/branches/initloma/data/newmeshs40.dat
+CC/home/toni/SVNlast/branches/initloma/data/toy.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpinc.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax167.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax100_3.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax100.dat
+CC/home/toni/SVNlast/branches/lomacte/data/finpTmax150old.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax150.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax125.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax105.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax110.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax120.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax150.dat
+CC/home/toni/SVNlast/branches/initloma/data/finpTmax175.dat
+CC
+CC
+CC  statistics file name max 70 char.
+CC/data2/toni/turb/3DTmax125b_01
+CC/data2/toni/turb/3DTmax105b_01
+CC/data2/toni/turb/s70cfl03_01
+CC/data2/toni/turb/s80test_01
+/data2/toni/turb/s80my1101newRK3_01
+CC/data2/toni/turb/s80my1101bignewBC_01
+CC/data2/toni/turb/s80my1101_01
+CC/data2/toni/turb/s70testcfl03_01
+CC/data2/toni/turb/newmeshs40_01
+CC/data2/toni/turb/3DTmax150old_01
+CC/data2/toni/turb/3DTmax110_01
+CC/data2/toni/turb/3DTmax120_01
+CC/data2/toni/turb/3DTmax150_01
+CC/data2/toni/turb/3DTmax175_01
+CC
+CC

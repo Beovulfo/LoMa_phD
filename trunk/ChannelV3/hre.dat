@@ -1,0 +1,63 @@
+CC This file contains the input data to be used
+CC in the 3-D DNS code for BIG CHANNEL at MN
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC      
+    48500      0.25     0.666666666            0.53
+CC
+CC # steps   #step ims  #step hist # timestep     
+CC    nstep    nimag     nhist      to throw away 
+CC                               stats and restart
+CC       *         *         *         *         
+       50001  200    20      -1          
+CC
+CC  mesh type:		        mesh
+CC  3:hiper			parameter:
+CC  1:tanh	             
+CC  2:sin                       gamma
+CC	1			1.8
+        5			0.96
+CC	
+CC  Time step   CFL   Start par:    
+CC			 0 continue
+CC                       1 restart time;
+CC    Delt      CFL     istart
+CC       *         *        *
+5.e-03 1.  10
+CC
+CC use Body  first     0/1/2        # steps
+CC forces    output    0 nothing     between
+CC 0 yes     file      1 start stat  statistics
+CC 1 no      number #  2 read a file
+CC       *         *        *        *
+0 783 1 20
+CC
+CC	Boundary parameters
+CC
+CC	mx	mz	uampl    vampl   wampl    phase speed
+CC
+	1      1     	0    	 0       0           0
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+/gpfs/scratch/upm17/upm17118/2000/chan2000
+CC
+CC
+CC  input file max 70 char22
+/gpfs/scratch/upm17/upm17118/2000/chan2000.782
+CC
+CC
+CC  statistics file name max 70 char.
+/gpfs/projects/upm17/upm17118/2000/espectros/chan2000_062
+CC
+CC

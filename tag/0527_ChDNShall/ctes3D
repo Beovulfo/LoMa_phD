@@ -1,0 +1,75 @@
+
+!**********************************************************************!
+!     Parameters file for *.f functions in liso. Needs Ctes3D.h        !
+!                                                                      !
+!**********************************************************************!
+!     MPI PARAMETERS 
+
+      integer numerop,pnodes,numerosa,nbuffsave,nreq,numtot
+      
+      parameter(numerop  = 2    ) 
+      parameter(pnodes   = 2    ) 
+      parameter(numerosa = 1    )
+      parameter(numtot   = numerop + numerosa)
+      parameter(nreq     = 2*numerop)
+      
+            
+!     MESH PARAMETERS
+
+      integer mgalx,mgalz,my
+      parameter(mgalx   =  384  )
+      parameter(mgalz   =  384 ) 
+      parameter(my      =  129 ) 
+    
+      integer mx,mz, mgalx1,mgalz1,mx1,my1,mz1,mgx,nz,nz1,nz2,
+     &        mgalzp,myp,mzp,mgalz1p,nxymax,nlines,nplanes,mx2
+
+ 
+      parameter(mx=2*(mgalx/3))
+      parameter(nplanes=mx/2)
+      parameter(mx2 =2*(mgalx/3), mz = 2*(mgalz/3)-1)
+      parameter(nlines=mgalz*my) 
+      parameter(mgalx1=mgalx-1,mgalz1=mgalz-1)
+      parameter(mx1=mx/2-1 ,my1=my-1, mz1=mz-1)
+      parameter(mgx=mgalx/2)
+      parameter(nz=(mz-1)/2,nz1=nz,nz2=mgalz-nz)
+      parameter(mgalzp=mgalz/numerop+1,myp=my/numerop+1)
+      parameter(mzp = mz/numerop+1,mgalz1p=mgalzp-1)
+
+!     SPECTRA  
+
+      integer nspec
+
+      parameter(nspec=19)
+      integer  jspecy(nspec)
+! wall units (re2000): 5, 10 15  20, 30 40 60,  100, 150
+!                     .1h .15h .2h .3h .4h   .5h .6h .7h .8h .9h
+      data jspecy    /9, 12, 15, 18, 23,27, 34, 46, 59,
+     .               70,  90, 109 ,141, 171, 198,224,248,272,294/
+
+
+
+
+
+!     ---------          re(950)    -------------------
+
+!      parameter(nspec=17) 
+!      integer  jspecy(nspec)
+!! wall units (re950) :5, 10, 15, 20, 30, 40, 60, 100, 150, 197
+!!                    279,371  467 562 655 744 835
+!      data jspecy    /8, 12, 15, 18, 23, 28, 34, 46, 49, 59, 70,
+!     .               87,104, 121,136,151,164/
+!
+
+
+!
+!!    ---------           re(1880)   ------------------
+!
+!      parameter(nspec=19) 
+!      integer  jspecy(nspec)
+!! wall units (re1880):5, 10, 15, 20, 30, 40, 60, 80, 99,152, 200
+!!                    379 567 753 946  1132 1319 1505 1695 1880
+!      data jspecy    /9, 13, 16, 20, 25, 29, 36, 43, 49, 64, 75,
+!     .               113,146, 177,206,232,258,282,306/
+!
+

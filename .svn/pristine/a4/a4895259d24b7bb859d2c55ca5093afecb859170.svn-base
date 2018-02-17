@@ -1,0 +1,17 @@
+#!/bin/sh
+#PBS -lwalltime=24:00:00
+#PBS -lnodes=66
+###PBS -q VIP
+#PBS -N tests80
+#PBS -k oe
+#PBS -j oe
+# Parameters:
+#  
+##WKD=/home/toni/SVNlast/branches/newloma/
+WKD=/home/toni/SVNlast/branches/lomacte/
+cd $WKD
+echo "WKD is..."
+echo $WKD
+echo "Calling mpirun for loMa"
+mpirun -np 66 /home/toni/SVNlast/branches/lomacte/loma
+echo "LoMaCte is running... they are coming..."

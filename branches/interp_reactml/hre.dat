@@ -1,0 +1,36 @@
+CC --------------------------------------------
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC     340     0.07757    0.3141592  0.0
+CC--------------------------------------------
+CC
+CC Length of the new mesh
+CC  MYE
+  1001
+CC
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 90 char.
+CC FILE OUTPUT
+CC/share/drive/toni/PantALy60/PantA.012.y2
+/share/drive/toni/RML/setA/LF1/SS/Re2640g6S1.010.y2
+CC/share/drive/toni/RML/PantBdm0/Re1200.005.y2
+CC/share/drive/toni/inc_ml_bm2/IC.dathz.y2
+CC FILE INPUT
+CC/share/drive/toni/RML/PantBdm0/Re1200.005
+/share/drive/toni/RML/setA/LF1/SS/Re2640g6S1.010
+CC/share/drive/toni/inc_ml_bm2/IC.dathz
+CC/share/drive/toni/PantALy60/PantA.012
+CC/share/drive/toni/PantAIC/PantA.010
+CC NEW MESH y
+CC~/Ly172my601B.txt
+/home/toni/setA_Dy002.txt
+CC/share/drive/toni/APS/PantBLf03/mesh2.txt
+CC~/SVNlast/branches/interp_reactml/data/mesh_dy05_Ly45_my781.txt

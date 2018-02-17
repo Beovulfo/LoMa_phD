@@ -1,0 +1,5 @@
+%CANAL TURBULENTO
+% FUNCIONA
+% Reynolds Reb=10000
+% Solo un modo kx=1, kz=0
+

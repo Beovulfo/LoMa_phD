@@ -1,0 +1,19 @@
+#!/bin/sh
+#PBS -lwalltime=50:00:00
+###PBS -lnodes=compute-0-3:ppn=12+compute-0-4:ppn=12
+#PBS -lnodes=9
+###PBS -q newnodes
+###PBS -q oldnodes
+#PBS -N inc03cte
+#PBS -k oe
+#PBS -j oe
+# Parameters:
+#  
+WKD=/home/toni/SVN/LowMach/branches/loma_transition/
+cd $WKD
+echo "WKD is..."
+echo $WKD
+echo "Calling mpirun for loMa"
+mpirun -np 9 /home/toni/SVN/LowMach/branches/loma_transition/loma
+
+echo "LoMa is running... they are coming..."

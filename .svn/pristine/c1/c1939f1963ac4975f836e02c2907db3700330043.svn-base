@@ -1,0 +1,172 @@
+{
+ "metadata": {
+  "name": "",
+  "signature": "sha256:5e697920925b121c39773707760730d39b5279f9596c6d074276dfb88bea4fe7"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from solveRK import *\n",
+      "from readfiles import *\n",
+      "from pylab import *"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "cf=readASCII('00Tmax105_01.cf')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "type(cf)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "ax = subplot(1,1,1)\n",
+      "p1 = ax.plot(cf[0,:],cf[2,:],'r-',label=\"Loma\");"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "(time,y,rhou00,rhov00,T00,timev,dmv)=RK3evolve(257,0.00941,2000,0.05,0)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "p2 = ax.plot(timev,dmv,'b.-',label=\"Sandbox\");\n",
+      "suptitle('Loma vs RK3 00', fontsize=14)\n",
+      "xlabel('time (s)')\n",
+      "ylabel('Momentum Thickness')\n",
+      "handles, labels = ax.get_legend_handles_labels()\n",
+      "ax.legend(handles[::-1], labels[::-1])"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "savefig('dmvstimeComparison.png')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from IPython.display import Image\n",
+      "Image(filename=\"dmvstimeComparison.png\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {},
+     "source": [
+      "Now open fortran file and read..."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from readfiles import *\n",
+      "from pylab import *"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "(y2,vor,phi) = read2field('lomaA101new.001')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from IPython.display import Image\n",
+      "figure()\n",
+      "ax= subplot(1,1,1)\n",
+      "p1 = ax.plot(y2,vor[63,126,:,0],'b');\n",
+      "suptitle(\"Mode 64,127 of VOR at t=0\")\n",
+      "savefig('vor64127t0.png')\n",
+      "Image(filename='vor64127t0.png')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "figure()\n",
+      "ax2=subplot(1,1,1)\n",
+      "p2= ax2.plot(y2,phi[63,126,:,0],'r');\n",
+      "suptitle(\"Mode 64,127 of PHI at t=0\")\n",
+      "savefig('phi64127t0.png')\n",
+      "Image(filename='phi64127t0.png')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}

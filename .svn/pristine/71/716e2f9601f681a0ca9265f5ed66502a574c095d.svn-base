@@ -1,0 +1,17 @@
+#!/bin/sh
+#PBS -lwalltime=30:05:00
+#PBS -lnodes=4
+####PBS -q oldnodes
+#PBS -N mixing_exptest
+#PBS -k oe
+#PBS -j oe
+# Parameters:
+#  
+WKD=/home/toni/SVNlast/branches/mixing_exp/
+cd $WKD
+echo "WKD is..."
+echo $WKD
+echo "Calling mpirun for mixing_exp"
+mpirun -np 4 /home/toni/SVNlast/branches/mixing_exp/loma
+
+echo "mixing_exp finished"

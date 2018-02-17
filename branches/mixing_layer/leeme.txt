@@ -1,0 +1,6 @@
+IMPORTANT
+---------
+This branch actually solves the incompressible mixing layer with NSCALARS passive scalars on it. It needs tu specify nscalars within the ctes3D and write each of the coefficients multiplying the diffusive terms for each scalar equation.
+
+-A. Almagro 
+

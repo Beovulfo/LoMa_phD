@@ -1,0 +1,129 @@
+CC --------------------------------------------
+CC This file contains the input data to be used
+CC Structure of the present file:
+CC 1) run size & no. of processors -> in ctes3D
+CC 2) Parameters and utilities
+CC 3) File names
+CC-----------------------------------------------------------------------
+CC 2)PARAMETERS used in the code
+CC-----------------------------------------------------------------------
+CC      Re       alp        bet          -u at 
+CC  Reynolds   x wave #   y wave        the walls 
+CC       *         *         *             *
+CC   RogersMoser  Lx=125dm0 Lz=31.25dm0
+CC       800      0.0503   0.2011     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC Small  Pantano dm0=1
+CC       160       0.03653    0.07306     0.
+CC Pantano reactive case B
+CC       1200       0.04601      0.189285   0.0
+CC  q0 max.growth rate BOX size
+CC Re   --- alpha-----beta-----SolenoidalFLAG
+CC                          make curl if flag.eq.1
+CC PantA case
+CC    640       0.07757    0.314  1
+CC PantB case  dm0 = 1
+    1200      0.046009131   0.178285383   1.0
+CC    5280      0.20268    0.7854  1.0
+CC     2640        0.2      0.8   0.0
+CC     1000        0.431      0.862   0.
+CC     1000       0.8621     1.4368   0.
+CC      50       1.00      1.0  0.
+CC       200       0.04601      0.189285   0.0
+CC Domain 2,3,4 (Re =160)
+CC       160      0.01365    0.0365     0.
+CC
+CC New domain for res 0.4 on x,z and 0.2 on y
+CC       160      0.020453    0.040906     0.
+CC  Pantano 06 dm0=1
+CC       160       0.0182    0.0731     0.
+CC       160       0.0091    0.0365     0.
+CC
+CCOLD    dm0     u0       DT (Temperature)          
+CC NOT USED             
+CC    dm0     u0       s (density ratio)(rho0=1.0)          
+CC    *       *        *
+CC----------------------------------------
+CC       1.0      1.0     1.0
+CC   nymax        nhmin           nhmax        swin 
+CC max waves y  min hor. wave   peak waves    swin*dm0
+CC      *           *               *           *
+CC nhmax such that k0 is aproximately the most unstable:k0= 1.0,nhmax = k0/alp
+CC PantB
+     2             4            48            4.0 
+CC PantA
+CC     1             2            30            0.25 
+CC        5           2              19          2.0 
+CC       1.0      0.5     1.0
+CC       1.0      0.5     8.0
+CC     1.0      0.5     0.666667
+CC     1.0      0.5     1.20
+CC     1.0      0.5     1.55555556
+CC
+CC  urmstarget   vrmstarget   wrmstarget
+CC          
+CC      *               *          *  
+      0.1             0.1         0.1
+CC      0.1             0.1         0.1
+CC
+CC    gam      Scomb       LF         betha
+CC      4.0       10.0        2.0         100 
+CC       3.73       4.0        1.0         50 
+CC Case PantA
+CC      0.0        1.0         1.0         20 
+CC Case PantB
+       4.0        4         1.0         50 
+CC       3.73        4        1.0         50 
+CC       3.73        4          2.0         50 
+CC       6.0        1.0        1.0         500 
+CC      0.0       1.0        1.0         100 
+CC      4.0      10.0        0.3         100 
+CC Noise
+CC        5           2              48          2.0 
+CC        5           2              24          4.0 
+CC        5           2              64          4.0 
+CC        5           2               48          2.0 
+CC        10           2              48          2.0 
+CC        10           2              48          2.0 
+CC        2           2              48          2.0 
+CC        2           2              4          2.0 
+CC        10           5              36          2.0 
+CC PANTANO used as reference for input generation
+CC-----------------------------------------------------------------------
+CC 3)FILE NAMES used in the code
+CC-----------------------------------------------------------------------
+CC file output max 70 char.
+CC/home/toni/fields/pantBmy601.dat
+CC/home/toni/fields/pantB.dat
+/home/toni/fields/PantBdm0.dat
+CC/home/toni/fields/PantB_Lf03.dat
+CC/share/drive/toni/reactml/PantB/ICcomet.dat
+CC/share/drive/toni/reactml/S10LF202D/IC.dat
+CC/share/drive/toni/comet/S01LF10g6/ICpantResx2.dat
+CC/share/drive/toni/reactml/S10LF102Db/IC.dat
+CC/share/drive/toni/reactml/S10LF032D/IC.dat
+CC  mesh and input profiles file max 70 char22
+CC mean profiles 
+CC/share/drive/toni/reactml/mean_S10LF20.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantBmy601.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantB.txt
+/home/toni/PantBdm0mesh.txt
+CC/share/drive/toni/APS/PantBLf03/mesh2.txt
+CC~/SVNlast/branches/initreactml/data/PantB.txt
+CC~/SVNlast/branches/initreactml/data/mesh_dy065_Ly40.txt
+CC~/SVNlast/branches/initreactml/data/mesh_dy005_Ly30_my701.txt
+CC/home/toni/SVNlast/branches/initreactml/data/mean_PantA.txt
+CC/share/drive/toni/reactml/mean_small_S01LF10g6.txt
+CC/share/drive/toni/reactml/mean_S10LF03.txt
+CC/share/drive/toni/reactml/mean_q0.txt
+CC/share/drive/toni/reactml/mean_S10LF03.txt
+CC/share/drive/toni/reactml/mean_S10LF10.txt
+CC/share/drive/toni/reactml/mean_S10LF10.txt
+CC Pert
+CC/share/drive/toni/reactml/pert_S10LF10.txt
+CC/share/drive/toni/reactml/pert_S10LF20.txt
+CC/share/drive/toni/reactml/pert_S40LF03g65.txt
+CC/share/drive/toni/reactml/pert_S10LF03.txt
+CC/share/drive/toni/reactml/pert_q0.txt
+CC/share/drive/toni/reactml/pert_S10LF10.txt
